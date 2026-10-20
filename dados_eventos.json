@@ -1,0 +1,392 @@
+{
+  "poluicao": {
+    "nome": "Poluição",
+    "cor": "#9c9994",
+    "meses_pico": [8, 9],
+    "alerta_atual": "Poluição",
+    "alteracoes": [
+      {
+        "tipo": "Alterações Cardiovasculares",
+        "doencas": [
+          "Arritmia cardíaca",
+          "Insuficiência cardíaca",
+          "Angina Pectoris e infarto do miocárdio"
+        ]
+      },
+      {
+        "tipo": "Alterações Respiratórias",
+        "doencas": [
+          "Alergias",
+          "Dispneia",
+          "Infecções respiratórias",
+          "Hiper-Reatividade brônquica",
+          "Asma",
+          "Câncer pulmão"
+        ]
+      },
+      {
+        "tipo": "Alterações Neurológicas",
+        "doencas": [
+          "Meningite meningocócica",
+          "AVC"
+        ]
+      }
+    ],
+    "cuidados": [
+      "Não saia quando houver um alerta de poluição do ar em vigor",
+      "Se houver uma onde de calor ao mesmo tempo, é ainda mais importante não sair",
+      "Ao sair com um bebê, cubra o carrinho",
+      "Evite as ruas com mais tráfego",
+      "Não faça exercícios ao ar livre",
+      "Em locais abertos, quando possível, use máscara para reduzir a inalação de partículas finas"
+    ]
+  },
+  "calor": {
+    "nome": "Calor",
+    "cor": "#dfc864",
+    "meses_pico": [9, 10, 11, 12, 1, 2, 3],
+    "alerta_atual": "Calor",
+    "alteracoes": [
+      {
+        "tipo": "Alterações Cardiovasculares",
+        "doencas": [
+          "Taquicardia",
+          "Hipertensão",
+          "Arritmia cardíaca",
+          "Síncope",
+          "Hipotensão",
+          "Insuficiência cardíaca",
+          "Angina Pectoris e infarto do miocardio",
+          "Insolação",
+          "Colapso pelo calor"
+        ]
+      },
+      {
+        "tipo": "Alterações Respiratórias",
+        "doencas": [
+          "Alergias",
+          "Dispneia",
+          "Asma",
+          "Hiper-reatividade brônquica",
+          "Colapso pelo calor",
+          "Exaustão pelo calor"
+        ]
+      },
+      {
+        "tipo": "Alterações Renais",
+        "doencas": [
+          "Nefrolitíase",
+          "Insuficiência Renal Aguda",
+          "Insuficiência Renal Crônica",
+          "Doença Renal Crônica de Etiologia não tradicional (DRCNT)",
+          "Distúrbios hidroeletrolíticos"
+        ]
+      },
+      {
+        "tipo": "Alterações Oftamológicas",
+        "doencas": [
+          "Fotoconjuntivite",
+          "Fotoceratite",
+          "Pterígio",
+          "Catarata"
+        ]
+      },
+      {
+        "tipo": "Alterações Cutâneas",
+        "doencas": [
+          "Ressecamento de pele",
+          "Dermatite"
+        ]
+      }
+    ],
+    "cuidados": [
+      "Evite atividades físicas durantes as horas mais quentes do dia – das 11h às 15h",
+      "Não fique muito tempo dentro de um veículo estacionado"
+    ]
+  },
+  "inundacoes": {
+    "nome": "Inundações",
+    "cor": "#7C9FF2",
+    "meses_pico": [1, 2],
+    "alerta_atual": "Inundações",
+    "alteracoes": [
+      {
+        "tipo": "Alterações Cardiovasculares",
+        "doencas": [
+          "Taquicardia",
+          "Hipertensão",
+          "Hipotensão",
+          "Insuficiência cardíaca"
+        ]
+      },
+      {
+        "tipo": "Alterações Respiratórias",
+        "doencas": [
+          "Alergias",
+          "Dispneia",
+          "Asma",
+          "Hiper-reatividade brônquica",
+          "Infecções respiratórias"
+        ]
+      },
+      {
+        "tipo": "Zoonoses e doenças de transmissão vetorial",
+        "doencas": [
+          "Dengue",
+          "Chikungunya",
+          "Zika",
+          "Malária",
+          "Malária placentária"
+        ]
+      },
+      {
+        "tipo": "Alterações Gastrointestinais",
+        "doencas": [
+          "Infecções Gastrointestinais"
+        ]
+      },
+      {
+        "tipo": "Alterações Neurológicas",
+        "doencas": [
+          "Parkinson",
+          "Alzheimer",
+          "Alterações de aprendizagem",
+          "Epilepsia",
+          "Síndrome de Guillain-Barré"
+        ]
+      },
+      {
+        "tipo": "Alterações de Adoecimento Mental",
+        "doencas": [
+          "Ansiedade",
+          "Depressão",
+          "Estresse pós-traumático",
+          "Problemas psico-sociais"
+        ]
+      },
+      {
+        "tipo": "Alterações de Saúde Materno-Infantil",
+        "doencas": [
+          "Parto prematuro",
+          "Microcefalia",
+          "Baixo peso ao nascer",
+          "Mortalidade perinatal"
+        ]
+      }
+    ],
+    "cuidados": [
+      "Se possível, não more em áreas sujeitas a alagamentos ou deslizamentos",
+      "Não permaneça em áreas de risco quando houver previsão de chuvas fortes",
+      "Não beba nem use água da enchente",
+      "Cubra bem caixas d’água e outros recipientes",
+      "Use repelente de mosquitos",
+      "Não dirija durante uma enchente"
+    ]
+  },
+  "secas": {
+    "nome": "Secas",
+    "cor": "#C78848",
+    "meses_pico": [5, 6, 7, 8, 9, 10],
+    "alerta_atual": "Secas",
+    "alteracoes": [
+      {
+        "tipo": "Alterações Cardiovasculares",
+        "doencas": [
+          "Taquicardia",
+          "Hipertensão",
+          "Arritmia cardíaca",
+          "Insuficiência cardíaca",
+          "Angina Pectoris"
+        ]
+      },
+      {
+        "tipo": "Alterações Respiratórias",
+        "doencas": [
+          "Alergias",
+          "Dispneia",
+          "Asma",
+          "Infecções respiratórias"
+        ]
+      },
+      {
+        "tipo": "Zoonoses e doenças de transmissão vetorial",
+        "doencas": [
+          "Dengue",
+          "Chikungunya",
+          "Zika",
+          "Malária",
+          "Malária placentária"
+        ]
+      },
+      {
+        "tipo": "Alterações Oftamológicas",
+        "doencas": [
+          "Irritação nos olhos"
+        ]
+      },
+      {
+        "tipo": "Alterações Gastrointestinais",
+        "doencas": [
+          "Infecções Gastrointestinais"
+        ]
+      },
+      {
+        "tipo": "Alterações Neurológicas",
+        "doencas": [
+          "AVC",
+          "Epilepsia",
+          "Esclerose Múltipla",
+          "Meningite meningocócica",
+          "Síndrome de Guillain-Barré"
+        ]
+      },
+      {
+        "tipo": "Alterações de Adoecimento Mental",
+        "doencas": [
+          "Ansiedade",
+          "Depressão",
+          "Estresse pós-traumático",
+          "Problemas psico-sociais"
+        ]
+      },
+      {
+        "tipo": "Alterações de Saúde Materno-Infantil",
+        "doencas": [
+          "Desnutrição materna",
+          "Parto prematuro",
+          "Microcefalia",
+          "Baixo peso ao nascer",
+          "Mortalidade perinatal"
+        ]
+      }
+    ],
+    "cuidados": [
+      "Não desperdice água",
+      "Proteja as fontes de água",
+      "Mantenha uma reserva de água purificada",
+      "Se possível, guarde água da chuva para utilizar para irrigação ou limpeza",
+      "Cubra bem caixas d’água e outros recipientes"
+    ]
+  },
+  "frio": {
+    "nome": "Frio",
+    "cor": "#608799",
+    "meses_pico": [5, 6],
+    "alerta_atual": "Frio",
+    "alteracoes": [
+      {
+        "tipo": "Alterações Cardiovasculares",
+        "doencas": [
+          "Taquicardia",
+          "Hipertensão",
+          "Angina Pectoris",
+          "Infarto do miocárdio",
+          "Miocardiopatia"
+        ]
+      },
+      {
+        "tipo": "Alterações Respiratórias",
+        "doencas": [
+          "Asma",
+          "Hiper-reatividade brônquica",
+          "Infecções respiratórias"
+        ]
+      },
+      {
+        "tipo": "Alterações Renais",
+        "doencas": [
+          "Insuficiência Renal crônica"
+        ]
+      },
+      {
+        "tipo": "Alterações Neurológicas",
+        "doencas": [
+          "AVC",
+          "Meningite meningocócica"
+        ]
+      },
+      {
+        "tipo": "Alterações de  Adoecimento Mental",
+        "doencas": [
+          "Ansiedade",
+          "Depressão"
+        ]
+      }
+    ],
+    "cuidados": [
+      "Não saia de casa se estiver muito frio",
+      "Vista-se adequadamente para o frio",
+      "Cubra a cabeça em dias de frio extremo",
+      "Fique o mínimo de tempo possível fora, ou faça pausas em locais quentes e com pouco vento",
+      "Fique ativo quando estiver ao ar livre, mas evite exercícios físicos vigorosos"
+    ]
+  },
+  "fenomemos extremos": {
+    "nome": "Fenômenos Extremos",
+    "cor": "#B793BA",
+    "meses_pico": [1, 2, 10, 11, 12],
+    "alerta_atual": "Fenômenos Extremos",
+    "alteracoes": [
+      {
+        "tipo": "Alterações cardiovasculares",
+        "doencas": [
+          "Taquicardia",
+          "Hipertensão",
+          "Insuficiência Cardíaca"
+        ]
+      },
+      {
+        "tipo": "Alterações de Adoecimento mental",
+        "doencas": [
+          "Ansiedade",
+          "Depressão",
+          "Estresse pós-traumático",
+          "Problemas psicossociais"
+        ]
+      },
+      {
+        "tipo": "Alterações de Saúde Materno-Infantil",
+        "doencas": [
+          "Parto prematuro",
+          "Baixo peso ao nascer"
+        ]
+      }
+    ],
+    "cuidados": []
+  },
+  "tempestades": {
+    "nome": "Tempestades",
+    "cor": "#6E6EB5",
+    "meses_pico": [12, 1, 2],
+    "alerta_atual": "Tempestades",
+    "alteracoes": [
+      {
+        "tipo": "Alterações Respiratórias",
+        "doencas": [
+          "Asma",
+          "Alergias",
+          "Hiper-reatividade brônquica"
+        ]
+      },
+      {
+        "tipo": "Zoonoses e doenças de transmissão vetorial",
+        "doencas": [
+          "Dengue",
+          "Chikungunya",
+          "Zika",
+          "Malária",
+          "Leptospirose",
+          "Hantavirose"
+        ]
+      }
+    ],
+    "cuidados": [
+      "Manutenção preventiva: Fazer a poda de galhos de árvores",
+      "Manutenção preventiva: Manter terrenos vazios limpos",
+      "Manutenção preventiva: Mantenha em casa uma lanterna com pilhas",
+      "Durante uma tempestade: Tente evacuar a área de risco",
+      "Durante uma tempestade: Feche as cortinas",
+      "Durante uma tempestade: Vá para o cômodo mais seguro e fique longe de janelas"
+    ]
+  }
+}

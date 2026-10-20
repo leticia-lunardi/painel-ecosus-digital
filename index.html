@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoSUS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Tela inicial -->
+<section id="tela-inicial" class="tela">
+  <div class="home">
+    <div id="home-info">
+      <div id="header">
+        <img src="logos/logoEcoSUS.png" alt="Logo do projeto" class="Logo-img" onerror="this.style.display='none'">
+        <h1 id="home-titulo" class="home-titulo">EcoSUS Digital: Saúde, Clima e Tranformação Digital do SUS</h1>
+      </div>
+      <p class="home-desc">
+        Este painel tem o objetivo de apoiar profissionais da saúde no reconhecimento e conscientização de riscos clínicos
+        associados a eventos climáticos, com base no Guia de Bolso: Mudanças Climáticas para Profissionais da Saúde, elaborado pelo Ministério da Saúde.</p>
+      <p class="home-desc">Existem dois modos de navegação:</p>
+      <ul class="home-desc">
+        <li><strong>Modo Automático</strong>: as informações passam automaticamente. Ideal para exibição em monitores/TVs.</li>
+        <li><strong>Modo Manual</strong>: pode-se navegar manualmente pelos eventos de interesse.</li>
+      </ul>
+    </div>
+    <div class="botoes-inicio">
+      <button id="btn-auto" class="botao botao--primario">
+        Modo automático
+      </button>
+      <button id="btn-manual" class="botao botao--secundario">
+        Modo manual
+      </button>
+    </div>
+  </div>
+  <footer class="rodape">
+        <div class="rodape-logo">
+          <h3>Realização e Apoio</h3>
+            <div class="rodape-img">
+              <img src="logos/logoEcoSUSrodape.png" alt="Logo do projeto" class="Logo-rodape" onerror="this.style.display='none'">
+              <img src="logos/logoFMB.png" alt="Logo do projeto" class="Logo-rodape" onerror="this.style.display='none'">
+              <img src="logos/logoPETsaude.png" alt="Logo do projeto" class="Logo-rodape" onerror="this.style.display='none'">
+              <img src="logos/logoUNESP.png" alt="Logo do projeto" class="Logo-rodape" onerror="this.style.display='none'">
+            </div>
+        </div>
+        <div class="links_contato">
+          <div class="rodape-links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Início</a></li>
+            </ul>
+          </div>
+          <div class="rodape-contato">
+            <h3>Contato</h3>
+            <p>Instagram: <a href="https://www.instagram.com/ecosusdigital/"> Acesse aqui</a></p>
+          </div>
+        </div>
+    </footer>
+</section>
+
+<!-- Tela dos slides: o modo automático e manual compartilham esse layout -->
+<section id="tela-slide" class="tela oculta">
+  <div class="slide-grid">
+
+    <div class="col col-alerta">
+      <div id="caixa-alerta" class="caixa-alerta">
+        <span class="alerta-rotulo">Possível evento climático</span>
+        <span id="alerta-texto" class="alerta-texto"></span>
+      </div>
+    </div>
+
+    <div class="col col-conteudo">
+      <h2 id="slide-titulo" class="slide-titulo"></h2>
+      <div id="slide-corpo" class="slide-corpo"></div>
+    </div>
+
+    <div class="col col-lateral">
+      <div class="trilha-bloco">
+        <span class="trilha-rotulo">Meses de maior risco</span>
+        <div id="slide-trilha" class="trilha-meses"></div>
+      </div>
+      <div class="info_projeto">
+        <img src="logos/logoEcoSUS.png" alt="Logo do projeto" class="Logo-img" onerror="this.style.display='none'">
+        <div class="qr-bloco">
+          <span class="qr-rotulo">Saiba mais sobre o projeto</span>
+          <img src="imagens/qr_exemplo.png" alt="QR code do projeto" class="qr-img" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controles do modo automático -->
+  <div id="controles-auto" class="controles oculta">
+    <button id="btn-voltar-auto" class="botao botao--fantasma">⏹ Voltar ao início</button>
+    <div class="barra-progresso-trilho">
+      <div id="barra-progresso" class="barra-progresso"></div>
+    </div>
+  </div>
+
+  <!-- Controles do modo manual -->
+  <div id="controles-manual" class="controles oculta">
+    <button id="btn-anterior" class="botao botao--fantasma">← Anterior</button>
+    <button id="btn-trocar-evento" class="botao botao--fantasma">Trocar evento</button>
+    <button id="btn-proximo" class="botao botao--fantasma">Próximo →</button>
+  </div>
+</section>
+
+<!-- Tela de seleção do evento para o modo manual -->
+<section id="tela-selecao-evento" class="tela oculta">
+  <div class="selecao-wrap">
+    <h2 class="selecao-titulo">Selecione o tipo de evento climático</h2>
+    <div id="botoes-eventos" class="botoes-eventos"></div>
+    <button id="btn-inicio-selecao" class="botao botao--fantasma">Início</button>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
