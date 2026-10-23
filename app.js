@@ -71,6 +71,7 @@ function slidePadrao(dados, titulo, corpoHtml) {
   corpo.classList.add("animar-slide");
 
   renderTrilhaMeses(document.getElementById("slide-trilha"), dados.meses_pico, dados.cor);
+  window.scrollTo(0, 0);
 }
 
 function renderAlteracoes(dados) {
@@ -166,6 +167,7 @@ function montarhome() {
 function mostrarTela(id) {
   document.querySelectorAll(".tela").forEach((t) => t.classList.add("oculta"));
   document.getElementById(id).classList.remove("oculta");
+  window.scrollTo(0, 0);
 }
 
 function pararTimer() {
