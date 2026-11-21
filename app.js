@@ -22,6 +22,12 @@ async function init() {
   document.getElementById("btn-anterior").addEventListener("click", () => navegarManual(-1));
   document.getElementById("btn-proximo").addEventListener("click", () => navegarManual(1));
   document.getElementById("btn-trocar-evento").addEventListener("click", iniciarManual);
+
+  const dialogo = document.getElementById("dialogo-doenca");
+  document.getElementById("dialogo-fechar").addEventListener("click", () => dialogo.close());
+  dialogo.addEventListener("click", (e) => {
+    if (e.target === dialogo) dialogo.close(); // clique fora da caixa
+  });
 }
 
 function dividirEmPaginas(lista, tamanho) {
@@ -82,10 +88,41 @@ function renderAlteracoes(dados) {
 }
 
 function renderDoencas(dados, alteracao) {
-  const itens = alteracao.doencas
-    .map((d) => `<div class="item-grid">${d}</div>`)
+  const doencas = alteracao.doencas.map((d) =>
+    typeof d === "string" ? { nome: d } : d
+  );
+
+  const itens = doencas
+    .map((d, i) =>
+      estado.modo === "manual"
+        ? `<button class="item-grid botao" data-i="${i}">${d.nome}</button>`
+        : `<div class="item-grid">${d.nome}</div>`
+    )
     .join("");
-  slidePadrao(dados, "Possíveis "+alteracao.tipo, `<div class="grid-itens grid-doencas">${itens}</div>`);
+
+  slidePadrao(dados, "Possíveis " + alteracao.tipo, `<div class="grid-itens grid-doencas">${itens}</div>`);
+
+  document.querySelectorAll("#slide-corpo button.item-grid").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      abrirDialogoDoenca(doencas[btn.dataset.i], dados.cor);
+    });
+  });
+}
+
+function abrirDialogoDoenca(doenca, cor) {
+  const dialogo = document.getElementById("dialogo-doenca");
+  dialogo.style.setProperty("--cor-evento", cor);
+  document.getElementById("dialogo-titulo").textContent = doenca.nome;
+
+  const partes = [];
+  if (doenca.fisiopatologia) partes.push(`<h4>Fisiopatologia da doença em relação aos riscos climáticos</h4><p>${doenca.fisiopatologia}</p>`);
+  if (doenca.efeitos_colaterais) {
+    partes.push(`<h4>Efeitos colaterais de certos medicamentos usados nessa doença que podem sofrer com alteração climatica</h4><ul>${doenca.efeitos_colaterais.map((s) => `<li>${s}</li>`).join("")}</ul>`);
+  }
+  if (doenca.dados_empiricos) partes.push(`<h4>Dados empíricos</h4><ul>${doenca.dados_empiricos.map((s) => `<li>${s}</li>`).join("")}</ul>`);
+
+  document.getElementById("dialogo-corpo").innerHTML = partes.join("");
+  dialogo.showModal();
 }
 
 function renderCuidados(dados, cuidados, offset, pagina, totalPaginas) {
@@ -179,13 +216,14 @@ function pararTimer() {
 
 function voltarInicio() {
   pararTimer();
-  estado = { slides: [], slideIndex: 0, timerId: null };
+  estado = { modo: null, slides: [], slideIndex: 0, timerId: null };
   montarhome();
   mostrarTela("tela-inicial");
 }
 
 // Modo automático
 function iniciarAutomatico() {
+  estado.modo = "auto";  
   estado.slides = slidesAutomaticos();
   estado.slideIndex = 0;
 
@@ -236,6 +274,7 @@ function renderBotoesEventos() {
 }
 
 function selecionarEvento(chave) {
+  estado.modo = "manual";
   estado.slides = EVENTOS[chave].slides;
   estado.slideIndex = 0;
 

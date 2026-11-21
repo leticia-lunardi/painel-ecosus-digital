@@ -2,33 +2,161 @@
   "poluicao": {
     "nome": "Poluição",
     "cor": "#9c9994",
-    "meses_pico": [8, 9],
+    "meses_pico": [
+      8,
+      9
+    ],
     "alerta_atual": "Poluição",
     "alteracoes": [
       {
         "tipo": "Alterações Cardiovasculares",
         "doencas": [
-          "Arritmia cardíaca",
-          "Insuficiência cardíaca",
-          "Angina Pectoris e infarto do miocárdio"
+          {
+            "nome": "Arritmia cardíaca",
+            "fisiopatologia": "A inalação de material particulado fino (MP_{2,5}), ozônio e gases poluentes ativa receptores pulmonares e provoca desequilíbrio do sistema nervoso autônomo, com hiperatividade simpática e redução da variabilidade da frequência cardíaca. Paralelamente, o estresse oxidativo e a inflamação sistêmica alteram os canais iônicos cardíacos e a condução elétrica do miocárdio, favorecendo o surgimento de extrassístoles, fibrilação atrial e arritmias ventriculares.",
+            "efeitos_colaterais": [
+              "Palpitações, tontura, síncope, piora da tolerância ao esforço e aumento do risco de eventos tromboembólicos (especialmente na fibrilação atrial) ou morte súbita cardíaca em pacientes vulneráveis."
+            ],
+            "dados_empiricos": [
+              "Estudos epidemiológicos e de monitoramento por Holter demonstram aumento agudo na incidência de fibrilação atrial e disparos de cardioversores-desfibriladores implantáveis (CDIs) nas horas e dias seguintes a picos de concentração de MP_{2,5} e NO_2."
+            ]
+          },
+          {
+            "nome": "Insuficiência cardíaca",
+            "fisiopatologia": "A exposição aguda e crônica a poluentes atmosféricos (MP_{2,5}, MP_{10} e CO) induz estresse oxidativo, inflamação sistêmica e disfunção endotelial, resultando em vasoconstrição periférica e pulmonar. Esse processo eleva a resistência vascular e a pressão arterial, aumentando a pós-carga e a pré-carga cardíacas. Em corações previamente comprometidos, a sobrecarga hemodinâmica e o remodelamento miocárdico desencadeiam descompensação e congestão.",
+            "efeitos_colaterais": [
+              "Dispneia progressiva, ortopneia, edema de membros inferiores, fadiga intensa, congestão pulmonar e maior necessidade de internações hospitalares por descompensação aguda."
+            ],
+            "dados_empiricos": [
+              "Revisões sistemáticas e meta-análises (como as destacadas pela American Heart Association) apontam associação consistente entre elevações de curto prazo em MP_{2,5}, CO e NO_2 e o aumento imediato nas taxas de hospitalização e mortalidade por insuficiência cardíaca."
+            ]
+          },
+          {
+            "nome": "Angina Pectoris e infarto do miocárdio",
+            "fisiopatologia": "A exposição a partículas finas (MP_{2,5}) e gases tóxicos desencadeia inflamação vascular, estresse oxidativo e disfunção endotelial, acelerando a progressão e a instabilização de placas ateroscleróticas coronarianas. Além disso, os poluentes promovem vasoconstrição coronariana, reduzem a oferta de oxigênio ao miocárdio (especialmente pelo monóxido de carbono) e aumentam a agregação plaquetária e a coagulabilidade sanguínea, favorecendo a isquemia e a trombose aguda.",
+            "efeitos_colaterais": [
+              "Dor ou desconforto torácico opressivo (angina), irradiação para membro superior esquerdo ou mandíbula, sudorese, náuseas, necrose miocárdica e choque cardiogênico em casos graves."
+            ],
+            "dados_empiricos": [
+              "Diversas coortes e estudos de séries temporais comprovam que aumentos de 10\\ \\mu\\text{g/m}^3 nos níveis de MP_{2,5} elevam significativamente o risco de síndrome coronariana aguda e infarto agudo do miocárdio nas primeiras 24 a 48 horas após a exposição."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Respiratórias",
         "doencas": [
-          "Alergias",
-          "Dispneia",
-          "Infecções respiratórias",
-          "Hiper-Reatividade brônquica",
-          "Asma",
-          "Câncer pulmão"
+          {
+            "nome": "Alergias",
+            "fisiopatologia": "Barreira epitelial comprometida → maior penetração de alérgenos e resposta inflamatória exacerbada. Poluentes (MP2,5, O₃, NO₂, COVs) agravam o quadro.",
+            "efeitos_colaterais": [
+              "Externo: anti-histamínicos de 1ª geração → sonolência, boca seca, ↓ sudorese; os de 2ª geração são menos sedativos."
+            ],
+            "dados_empiricos": [
+              "OMS: MP2,5 < 5 µg/m³ (média anual); 99% da população mundial vive acima desse nível."
+            ]
+          },
+          {
+            "nome": "Dispneia",
+            "fisiopatologia": "Inflamação e estresse oxidativo das vias aéreas pelo MP2,5, O₃ e NO₂; remodelação das vias aéreas na exposição crônica (asma e DPOC).",
+            "efeitos_colaterais": [
+              "Guia: preferir inalador de pó seco (DPI) ao spray (MDI) quando possível. Externo (rótulo FDA, albuterol HFA): taquicardia, tremor, hipocalemia e broncoespasmo paradoxal; diuréticos potencializam a hipocalemia; betabloqueadores reduzem o efeito e podem causar broncoespasmo."
+            ],
+            "dados_empiricos": [
+              "Brasil: poluição do ar associada a ~40 mil mortes respiratórias e ~10 mil por DPOC (VigiAr)."
+            ]
+          },
+          {
+            "nome": "Infecções respiratórias",
+            "fisiopatologia": "Disfunção imunológica e barreira epitelial lesada aumentam a suscetibilidade a patógenos; poluição inalada aumenta o risco de infecções de vias aéreas inferiores.",
+            "efeitos_colaterais": [
+              "Sem informação no guia nem nas fontes consultadas."
+            ],
+            "dados_empiricos": [
+              "Rio de Janeiro: PM10, SO₂ e CO elevados ↑ internações respiratórias de emergência, sobretudo em < 5 e > 65 anos (Sousa et al., 2012). Queimadas na Amazônia ↑ PM2,5 e internações respiratórias."
+            ]
+          },
+          {
+            "nome": "Hiper-Reatividade brônquica",
+            "fisiopatologia": "Inflamação das vias aéreas e disfunção epitelial induzidas por poluentes; plasticidade epitelial alterada e remodelação em exposição crônica.",
+            "efeitos_colaterais": [
+              "Guia: preferir inalador de pó seco (DPI) ao spray (MDI) quando possível. Externo (rótulo FDA, albuterol HFA): taquicardia, tremor, hipocalemia e broncoespasmo paradoxal; diuréticos potencializam a hipocalemia; betabloqueadores reduzem o efeito e podem causar broncoespasmo."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Asma",
+            "fisiopatologia": "Estresse oxidativo + inflamação + remodelação das vias aéreas com exposição crônica; maior penetração de alérgenos pela barreira lesada.",
+            "efeitos_colaterais": [
+              "Guia: preferir inalador de pó seco (DPI) ao spray (MDI) quando possível. Externo (rótulo FDA, albuterol HFA): taquicardia, tremor, hipocalemia e broncoespasmo paradoxal; diuréticos potencializam a hipocalemia; betabloqueadores reduzem o efeito e podem causar broncoespasmo."
+            ],
+            "dados_empiricos": [
+              "Crianças em áreas urbanas muito poluídas têm maior risco de asma. +10 µg/m³ de MP2,5 ≈ 5,5 cigarros passivos/dia (Van Der Zee et al., 2016)."
+            ]
+          },
+          {
+            "nome": "Câncer pulmão",
+            "fisiopatologia": "Exposição crônica a MP, gases e fumaça (queima de biomassa e combustíveis fósseis) como fator de risco direto; inflamação crônica e estresse oxidativo.",
+            "efeitos_colaterais": [
+              "Sem informação no guia nem nas fontes consultadas."
+            ],
+            "dados_empiricos": [
+              "Crianças em áreas urbanas muito poluídas têm maior risco de asma. +10 µg/m³ de MP2,5 ≈ 5,5 cigarros passivos/dia (Van Der Zee et al., 2016)."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Neurológicas",
         "doencas": [
-          "Meningite meningocócica",
-          "AVC"
+          {
+            "nome": "Meningite meningocócica",
+            "fisiopatologia": "A poluição pode provocar lesões na mucosa da nasofaringe, facilitando a entrada da bactéria Neisseria meningitidis no organismo. Após sua entrada, o meningococo pode atingir a corrente sanguínea e atravessar a barreira hematoencefálica, provocando inflamação das meninges (meningite).",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "AVC",
+            "fisiopatologia": "Está associada ao aumento do risco de acidentes vasculares cerebrais (AVC), principalmente devido à exposição a partículas finas (MP₂,₅) e outros poluentes. Essas substâncias podem desencadear estresse oxidativo, inflamação sistêmica e disfunção endotelial, favorecendo a aterosclerose e a formação de trombos. Além disso, podem provocar vasoconstrição, alterações da pressão arterial e maior ativação da coagulação sanguínea, aumentando o risco de obstrução ou ruptura de vasos cerebrais. Dessa forma, a exposição à poluição do ar pode contribuir tanto para a ocorrência de AVC isquêmico quanto hemorrágico.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "Alterações de Adoecimento Mental",
+        "doencas": [
+          {
+            "nome": "Transtorno Depressivo Maior",
+            "fisiopatologia": "Partículas finas (MP₂,₅) causam neuroinflamação, estresse oxidativo e alteração da barreira hematoencefálica em áreas cerebrais de regulação emocional.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "A exposição de curto prazo a poluentes atmosféricos está relacionada ao agravamento de sintomas depressivos (Yoo et al., 2021).",
+              "Estudos associam altos níveis de poluição ao aumento de sintomas depressivos (Bhui et al., 2023; Fan et al., 2024; Zundel et al., 2022)."
+            ]
+          },
+          {
+            "nome": "Transtornos de Ansiedade",
+            "fisiopatologia": "Poluentes atmosféricos geram estresse oxidativo e alteram circuitos cerebrais responsáveis pela regulação emocional e da ansiedade.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Evidências mostram associação entre altos níveis de poluentes no ar e o aumento de sintomas ansiosos (Zundel et al., 2022; Fan et al., 2024)."
+            ]
+          }
         ]
       }
     ],
@@ -44,58 +172,345 @@
   "calor": {
     "nome": "Calor",
     "cor": "#dfc864",
-    "meses_pico": [9, 10, 11, 12, 1, 2, 3],
+    "meses_pico": [
+      9,
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
     "alerta_atual": "Calor",
     "alteracoes": [
       {
         "tipo": "Alterações Cardiovasculares",
         "doencas": [
-          "Taquicardia",
-          "Hipertensão",
-          "Arritmia cardíaca",
-          "Síncope",
-          "Hipotensão",
-          "Insuficiência cardíaca",
-          "Angina Pectoris e infarto do miocardio",
-          "Insolação",
-          "Colapso pelo calor"
+          {
+            "nome": "Transtornos de Ansiedade",
+            "fisiopatologia": "A poluição atmosférica combinada às altas temperaturas potencializa a suscetibilidade e a resposta adversa a tratamentos psicofarmacológicos contínuos.",
+            "dados_empiricos": [
+              "Estudos associam altos níveis de poluição ao aumento de sintomas depressivos (Bhui et al., 2023; Fan et al., 2024; Zundel et al., 2022)."
+            ]
+          },
+          {
+            "nome": "Hipertensão",
+            "fisiopatologia": "A exposição ao calor intenso provoca inicialmente vasodilatação periférica e sudorese para termorregulação. Contudo, a desidratação subsequente ativa o sistema renina-angiotensina-aldosterona (SRAA) e o sistema nervoso simpático, gerando vasoconstrição compensatória, retenção hidrossalina e elevação da pressão arterial — sobretudo em idosos e hipertensos com disfunção endotelial.",
+            "efeitos_colaterais": [
+              "Cefaleia, tontura, rubor facial, palpitações, picos hipertensivos e maior risco de crise hipertensiva ou descompensação renal aguda."
+            ],
+            "dados_empiricos": [
+              "Estudos de séries temporais e revisões sistemáticas mostram aumento significativo nas admissões hospitalares por emergências hipertensivas e maior variabilidade pressórica durante ondas de calor, especialmente em indivíduos acima de 65 anos."
+            ]
+          },
+          {
+            "nome": "Arritmia cardíaca",
+            "fisiopatologia": "O estresse térmico desencadeia hiperatividade simpática, aumento da frequência cardíaca e sudorese intensa com perda de eletrólitos (potássio, magnésio e sódio). A hipocalemia e a hipomagnesemia associadas à hemoconcentração alteram o potencial de ação e a repolarização ventricular, predispondo a arritmias atriais e ventriculares.",
+            "efeitos_colaterais": [
+              "Palpitações, pré-síncope, síncope, dispneia, dor torácica e aumento do risco de fibrilação atrial, taquicardia ventricular ou morte súbita cardíaca."
+            ],
+            "dados_empiricos": [
+              "Coortes epidemiológicas e dados de monitoramento cardíaco demonstram elevação aguda nas internações por fibrilação atrial e arritmias ventriculares nos dias subsequentes a temperaturas extremas, com risco acentuado em cardiopatas prévios."
+            ]
+          },
+          {
+            "nome": "Síncope",
+            "fisiopatologia": "O calor extremo induz vasodilatação cutânea acentuada e redução do volume plasmático pela sudorese. Esse mecanismo diminui o retorno venoso e a pré-carga cardíaca, provocando queda abrupta do débito cardíaco e hipoperfusão cerebral transitória (síncope vasovagal ou ortostática).",
+            "efeitos_colaterais": [
+              "Tontura, turvação visual, sudorese fria, palidez, perda súbita e transitória da consciência e risco de quedas ou traumas secundários."
+            ],
+            "dados_empiricos": [
+              "Registros de pronto-atendimento indicam aumento expressivo nos atendimentos por síncope e pré-síncope durante o verão e ondas de calor, afetando tanto trabalhadores expostos ao sol quanto idosos em uso de anti-hipertensivos."
+            ]
+          },
+          {
+            "nome": "Hipotensão",
+            "fisiopatologia": "A termorregulação diante de altas temperaturas promove redistribuição do fluxo sanguíneo para a pele por vasodilatação periférica intensa, reduzindo a resistência vascular sistêmica. Somada à depleção volêmica por sudorese e ao uso de diuréticos ou vasodilatadores, ocorre queda sustentada da pressão arterial.",
+            "efeitos_colaterais": [
+              "Fraqueza intensa, tontura postural, visão turva, náuseas, letargia, síncope e risco de hipoperfusão renal ou miocárdica."
+            ],
+            "dados_empiricos": [
+              "Estudos clínicos e observacionais apontam maior incidência de hipotensão sintomática e hipotensão ortostática durante períodos de calor extremo, frequentemente levando à necessidade de ajuste de fármacos anti-hipertensivos."
+            ]
+          },
+          {
+            "nome": "Insuficiência cardíaca",
+            "fisiopatologia": "Para dissipar o calor, o organismo aumenta o débito cardíaco e o fluxo sanguíneo cutâneo, impondo sobrecarga hemodinâmica ao miocárdio. Em pacientes com reserva cardíaca reduzida, somam-se a ativação neuro-hormonal (simpática e SRAA) e os distúrbios hidroeletrolíticos, precipitando descompensação aguda.",
+            "efeitos_colaterais": [
+              "Dispneia aos mínimos esforços, ortopneia, edema de membros inferiores, fadiga extrema, congestão pulmonar e maior necessidade de internação hospitalar."
+            ],
+            "dados_empiricos": [
+              "Meta-análises internacionais associam ondas de calor ao aumento significativo na mortalidade e nas hospitalizações por insuficiência cardíaca descompensada, com impacto desproporcional em idosos e populações vulneráveis."
+            ]
+          },
+          {
+            "nome": "Angina Pectoris e infarto do miocardio",
+            "fisiopatologia": "O calor aumenta a demanda metabólica e o consumo de oxigênio do miocárdio pela taquicardia e elevação do débito cardíaco. Simultaneamente, a desidratação causa hemoconcentração, aumento da viscosidade sanguínea e hipercoagulabilidade, favorecendo a ruptura de placas ateroscleróticas e a trombose coronariana.",
+            "efeitos_colaterais": [
+              "Dor ou aperto retroesternal com irradiação para membro superior esquerdo ou mandíbula, sudorese profusa, dispneia, necrose miocárdica e choque cardiogênico."
+            ],
+            "dados_empiricos": [
+              "Estudos de séries temporais comprovam que cada incremento de 1 °C acima do limiar térmico local eleva o risco de hospitalização e óbito por infarto agudo do miocárdio nas primeiras 24 a 72 horas após a exposição."
+            ]
+          },
+          {
+            "nome": "Insolação",
+            "fisiopatologia": "A falha dos mecanismos termorreguladores eleva a temperatura corporal central acima de 40 °C, desencadeando resposta inflamatória sistêmica, lesão endotelial direta e coagulação intravascular disseminada. O colapso cardiovascular decorre da vasodilatação extrema, hipovolemia grave e disfunção miocárdica térmica.",
+            "efeitos_colaterais": [
+              "Hipertermia grave, taquicardia acentuada, hipotensão refratária, confusão mental, convulsões, insuficiência renal aguda e falência de múltiplos órgãos."
+            ],
+            "dados_empiricos": [
+              "Dados epidemiológicos de ondas de calor mostram que a insolação apresenta alta letalidade hospitalar (entre 10% e 50% nos casos graves), sendo uma das principais causas diretas de óbito cardiovascular em extremos térmicos."
+            ]
+          },
+          {
+            "nome": "Colapso pelo calor",
+            "fisiopatologia": "Decorre da incapacidade do sistema cardiovascular de manter o débito cardíaco adequado diante da vasodilatação periférica máxima e da perda hídrica e eletrolítica por sudorese profusa, resultando em queda brusca do retorno venoso e falência circulatória aguda.",
+            "efeitos_colaterais": [
+              "Desmaio súbito, palidez, pele fria e úmida, pulso rápido e filiforme, hipotensão grave, náuseas e fadiga extrema."
+            ],
+            "dados_empiricos": [
+              "Levantamentos em saúde ocupacional e medicina de emergência demonstram picos de atendimentos por colapso térmico durante ondas de calor urbano, com forte correlação com trabalho físico intenso e falta de climatização."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Respiratórias",
         "doencas": [
-          "Alergias",
-          "Dispneia",
-          "Asma",
-          "Hiper-reatividade brônquica",
-          "Colapso pelo calor",
-          "Exaustão pelo calor"
+          {
+            "nome": "Alergias",
+            "fisiopatologia": "Calor ↑ produção de pólen e prolonga as estações polínicas → mais sensibilização e sintomas em asma e rinite alérgica; efeito sinérgico com poluição do ar.",
+            "efeitos_colaterais": [
+              "Guia: anti-histamínicos podem agravar o estresse por calor. Externo (CDC/Scientific American): os de ação anticolinérgica (ex.: difenidramina) reduzem a sudorese; os de 2ª geração raramente afetam a termorregulação."
+            ],
+            "dados_empiricos": [
+              "Temperaturas altas ↑ produção de pólen e prolongam a estação polínica (Barnes, 2018)."
+            ]
+          },
+          {
+            "nome": "Dispneia",
+            "fisiopatologia": "↑ frequência respiratória e volume corrente, ↑ resistência das vias aéreas e broncoconstrição reflexa; no golpe de calor ocorre hiperventilação.",
+            "efeitos_colaterais": [
+              "Guia: simpaticomiméticos e anticolinérgicos podem agravar o estresse por calor; preferir inalador de pó seco (DPI) ao spray (MDI). Externo (revisão sistemática, eClinicalMedicine 2024): anticolinérgicos fortes e betabloqueadores não seletivos prejudicam a termorregulação no calor. Externo (rótulo FDA, albuterol HFA): taquicardia, tremor, hipocalemia e broncoespasmo paradoxal; diuréticos potencializam a hipocalemia; betabloqueadores reduzem o efeito e podem causar broncoespasmo. Externo (rótulo FDA): spray (MDI) exposto a > 49 °C (120 °F) pode romper; guardar a 20–25 °C."
+            ],
+            "dados_empiricos": [
+              "Brasil (5.572 municípios, 2008–2018): calor extremo → internações respiratórias RR 1,29 (IC95% 1,26–1,32) (Requia et al., 2023). DPOC: +5 °C na média diária → +5% de internações, maior em ≥ 75 anos (Zhang et al., 2022)."
+            ]
+          },
+          {
+            "nome": "Asma",
+            "fisiopatologia": "Calor extremo lesa a barreira epitelial das vias aéreas (perturba proteínas estruturais), gerando inflamação e hiper-reatividade; ↑ volume corrente e frequência respiratória, afeta a termorregulação, ↑ resistência das vias aéreas e causa broncoconstrição reflexa.",
+            "efeitos_colaterais": [
+              "Guia: simpaticomiméticos e anticolinérgicos podem agravar o estresse por calor; preferir inalador de pó seco (DPI) ao spray (MDI). Externo (revisão sistemática, eClinicalMedicine 2024): anticolinérgicos fortes e betabloqueadores não seletivos prejudicam a termorregulação no calor. Externo (rótulo FDA, albuterol HFA): taquicardia, tremor, hipocalemia e broncoespasmo paradoxal; diuréticos potencializam a hipocalemia; betabloqueadores reduzem o efeito e podem causar broncoespasmo. Externo (rótulo FDA): spray (MDI) exposto a > 49 °C (120 °F) pode romper; guardar a 20–25 °C."
+            ],
+            "dados_empiricos": [
+              "Brasil: ↑ de internações por asma com calor, sobretudo em idosos (Wu et al., 2021). Internações respiratórias com calor extremo: RR 1,29 (IC95% 1,26–1,32)."
+            ]
+          },
+          {
+            "nome": "Hiper-reatividade brônquica",
+            "fisiopatologia": "Calor extremo lesa a barreira epitelial das vias aéreas (perturba proteínas estruturais), gerando inflamação e hiper-reatividade; ↑ volume corrente e frequência respiratória, afeta a termorregulação, ↑ resistência das vias aéreas e causa broncoconstrição reflexa.",
+            "efeitos_colaterais": [
+              "Guia: simpaticomiméticos e anticolinérgicos podem agravar o estresse por calor; preferir inalador de pó seco (DPI) ao spray (MDI). Externo (revisão sistemática, eClinicalMedicine 2024): anticolinérgicos fortes e betabloqueadores não seletivos prejudicam a termorregulação no calor. Externo (rótulo FDA, albuterol HFA): taquicardia, tremor, hipocalemia e broncoespasmo paradoxal; diuréticos potencializam a hipocalemia; betabloqueadores reduzem o efeito e podem causar broncoespasmo. Externo (rótulo FDA): spray (MDI) exposto a > 49 °C (120 °F) pode romper; guardar a 20–25 °C."
+            ],
+            "dados_empiricos": [
+              "Internações respiratórias com calor extremo: RR 1,29 (IC95% 1,26–1,32) (Requia et al., 2023)."
+            ]
+          },
+          {
+            "nome": "Colapso pelo calor",
+            "fisiopatologia": "Desmaio/síncope por calor: vasodilatação periférica profunda, depleção de volume e ↓ do tônus vasomotor → ↓ retorno venoso e síncope ou pré-síncope. (Quadro 1, gravidade moderada).",
+            "efeitos_colaterais": [
+              "Guia: rever medicamentos e, com cautela, considerar suspender os que agravam o calor (anticolinérgicos, anti-histamínicos, antidepressivos, antipsicóticos, betabloqueadores, bloqueadores de canal de cálcio, diuréticos, simpaticomiméticos, entre outros). Externo (revisão sistemática, eClinicalMedicine 2024): anticolinérgicos fortes e betabloqueadores não seletivos prejudicam a termorregulação no calor. Orientação de especialistas: não suspender por conta própria; reforçar resfriamento e hidratação."
+            ],
+            "dados_empiricos": [
+              "Sintomas: tontura, ortostase e perda transitória de consciência logo após interromper a atividade (Quadro 1)."
+            ]
+          },
+          {
+            "nome": "Exaustão pelo calor",
+            "fisiopatologia": "Disfunção termorreguladora leve, hipovolemia com vasoconstrição e hipotensão esplâncnica, disfunção multiorgânica precoce (Quadro 1, gravidade moderada).",
+            "efeitos_colaterais": [
+              "Guia: rever medicamentos e, com cautela, considerar suspender os que agravam o calor (anticolinérgicos, anti-histamínicos, antidepressivos, antipsicóticos, betabloqueadores, bloqueadores de canal de cálcio, diuréticos, simpaticomiméticos, entre outros). Externo (revisão sistemática, eClinicalMedicine 2024): anticolinérgicos fortes e betabloqueadores não seletivos prejudicam a termorregulação no calor. Orientação de especialistas: não suspender por conta própria; reforçar resfriamento e hidratação. Guia (Box 3): paracetamol e benzodiazepínicos podem piorar o quadro de golpe de calor."
+            ],
+            "dados_empiricos": [
+              "Temperatura central 38,3–40 °C; > 40 °C com confusão mental = suspeitar de golpe de calor. Sem melhora em 30 min → emergência."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Renais",
         "doencas": [
-          "Nefrolitíase",
-          "Insuficiência Renal Aguda",
-          "Insuficiência Renal Crônica",
-          "Doença Renal Crônica de Etiologia não tradicional (DRCNT)",
-          "Distúrbios hidroeletrolíticos"
+          {
+            "nome": "Nefrolitíase",
+            "fisiopatologia": "Com o aumento da temperatura, pode ocorrer desidratação, que faz com que a concentração urinária aumente, levando assim a concentração de sais insolúveis e a formação de cristais na urina, levando  ao desenvolvimento de cálculos renais.",
+            "efeitos_colaterais": [
+              "O tratamento medicamentoso da nefrolitíase (cálculo renal) divide-se em três frentes principais: alívio da dor na crise aguda, terapia para expulsão da pedra e prevenção de novos cálculos. A escolha do fármaco varia conforme a fase da doença e a composição da pedra."
+            ],
+            "dados_empiricos": [
+              "É provável que a prevalência de nefrolitíase aumente em mais de 10% até 2050 devido ao aquecimento global"
+            ]
+          },
+          {
+            "nome": "Insuficiência Renal Aguda",
+            "fisiopatologia": "O calor intenso pode causar insuficiência renal aguda de diversas maneiras. Pode lesar diretamente as células dos rins, além de provocar desidratação e hipotensão, reduzindo a filtração do sangue pelos rins. Em casos de esforço físico intenso no calor, também pode ocorrer a rabdomiólise (destruição das fibras musculares), liberando mioglobina na urina (mioglobinúria), que prejudica a função renal. Esses fatores podem levar à insuficiência renal aguda.",
+            "efeitos_colaterais": [
+              "Na insuficiência renal aguda (IRA), o tratamento medicamentoso não costuma ser único, mas é preciso o uso cuidadoso de fármacos para tratar a causa base, controlar sintomas e complicações e evitar substâncias nefrotóxicas. Os medicamentos variam a cada caso, mas podem ser usados diuréticos de alça, soluções para hidratação e reposição volêmica, corticosteroides, etc.                                                                                                                                                               Quando a doença é desencadeada ou acompanhada por uma infecção, é necessário o uso antibióticos, podendo haver efeitos colaterais como:                                                                                                                                                                                            - Amoxicilina: desidratação por diarreia;                                                                                                                                                       - Doxiciclina: desidratação por vômitos;                                                                                                                                                       - Norfloxacino, ciprofloxacino, levofloxacino, doxiciclina: reações cutâneas fototóxicas ou fotoalérgicas se a pessoa for exposta à luz",
+              "solar (raios UV)."
+            ],
+            "dados_empiricos": [
+              "Durante as ondas de calor, a função renal frequentemente se apresenta alterada em pessoas idosas e crianças."
+            ]
+          },
+          {
+            "nome": "Insuficiência Renal Crônica",
+            "fisiopatologia": "Os mesmos mecanismos que intervêm na insuficiência renal aguda podem, com o tempo, levar à insuficiência renal crônica.",
+            "efeitos_colaterais": [
+              "Quando o calor agrava a Doença Renal Crônica (DRC) — geralmente por desidratação, perda de sais minerais ou queda de pressão, não existe um remédio específico, o manejo envolve, principalmente, reavaliar o caso.                                   Na doença renal crônica (DRC), o tratamento medicamentoso costuma combinar fármacos que protegem os rins e controlam comorbidades com cuidados para evitar toxicidade e acúmulo no organismo. Os medicamentos variam a cada caso, mas podem ser usados diuréticos, anti-hipertensivos, estatinas, inibidores de SGLT2, etc."
+            ],
+            "dados_empiricos": [
+              "Durante as ondas de calor, a função renal frequentemente se apresenta alterada em pessoas idosas e crianças."
+            ]
+          },
+          {
+            "nome": "Doença Renal Crônica de Etiologia não tradicional (DRCNT)",
+            "fisiopatologia": "A doença renal crônica não tradicional (DRCnT) pode ser causada pelo trabalho em ambientes muito quentes. O calor provoca desidratação repetida, inflamação, aumento da temperatura corporal, pequenas lesões musculares e danos diretos aos rins. Os trabalhadores que fazem esforço físico intenso em locais quentes são os mais afetados.",
+            "efeitos_colaterais": [
+              "Não existe um tratamento farmacológico específico ou curativo para a Doença Renal Crônica de etiologia não tradicional (DRCNT). O manejo segue o padrão da doença renal crônica, focado em retardar a progressão da lesão e corrigir desequilíbrios metabólicos e eletrolíticos"
+            ],
+            "dados_empiricos": [
+              "-Nos trabalhadores da cana-de-açúcar, a incidência cumulativa de insuficiência renal aguda associada à desidratação e ao baixo consumo de soluções hidroeletrolíticas aumenta em mais de 50% de fevereiro a abril.",
+              "-Entre os canavieiros, 27% dos cortadores de cana queimada – que fazem o trabalho mais pesado – apresentaram redução significativa da função renal ao longo dos seis meses da safra. Essa redução foi 12 vezes mais comum do que entre os trabalhadores da cana cujo trabalho envolvia menos esforço físico.",
+              "-A DRCnT está intimamente relacionada a trabalhar e morar em ambiente quente, mas ainda não foi determinado se é causada por uma toxina, um agente infeccioso, lesões diretas por calor ou uma combinação de fatores."
+            ]
+          },
+          {
+            "nome": "Distúrbios hidroeletrolíticos",
+            "fisiopatologia": "A lesão renal causada pelo colapso por calor ocorre principalmente por desidratação, hipovolemia, rabdomiólise e alterações na coagulação. Além disso, o colapso pelo calor está associado à síndrome da resposta inflamatória sistêmica (SIRS) e à elevação da creatina quinase. A desidratação associada a diarreia, vômitos, sudorese excessiva e hipertermia leva à hipernatremia (aumento do sódio). A hipocalemia (queda do potássio) pode ocorrer devido à perda de potássio em vômitos, diarreia ou uso de diuréticos. A passagem do fosfato para o espaço extracelular, provocada por lesão tecidual, também pode causar hipocalcemia (queda do cálcio). Além dos rins, o colapso por calor pode afetar o sistema nervoso, o coração e os pulmões.",
+            "efeitos_colaterais": [
+              "O tratamento dos distúrbios hidroeletrolíticos causados pelo calor baseia-se na reposição imediata de água e eletrólitos (como sódio e potássio) por meio de sais de reidratação oral ou soluções intravenosas, não existindo um medicamento específico para \"curar\" a hipertermia ou a desidratação térmica."
+            ],
+            "dados_empiricos": [
+              "Vários distúrbios hidroeletrolíticos são devidos ao colapso pelo calor."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Oftamológicas",
         "doencas": [
-          "Fotoconjuntivite",
-          "Fotoceratite",
-          "Pterígio",
-          "Catarata"
+          {
+            "nome": "Fotoconjuntivite",
+            "fisiopatologia": "São lesões inflamatórias agudas (espécie de \"queimadura solar\" dos olhos) causadas pela radiação ultravioleta (UVB/UVA), intensificadas pelo calor e reflexão do ambiente. A radiação provoca apoptose (morte celular programada) das células epiteliais da conjuntiva e da córnea, liberação de citocinas inflamatórias, edema e perda do epitélio corneal.",
+            "efeitos_colaterais": [
+              "O tratamento envolve colírios lubrificantes e, em casos mais dolorosos, analgésicos ou anti-inflamatórios tópicos (AINEs). O armazenamento e a instabilidade desses compostos podem ser comprometidos em ambientes de calor extremo, além de os AINEs tópicos poderem causar ceratopatia tóxica ou atrasar a epitelização se o olho estiver excessivamente irritado pela radiação e pelo suor térmico."
+            ],
+            "dados_empiricos": [
+              "Relatórios de saúde ocupacional indicam um aumento expressivo de ceratites actínicas em trabalhadores externos durante ondas de calor intenso e dias de alta radiação solar."
+            ]
+          },
+          {
+            "nome": "Fotoceratite",
+            "fisiopatologia": "São lesões inflamatórias agudas (espécie de \"queimadura solar\" dos olhos) causadas pela radiação ultravioleta (UVB/UVA), intensificadas pelo calor e reflexão do ambiente. A radiação provoca apoptose (morte celular programada) das células epiteliais da conjuntiva e da córnea, liberação de citocinas inflamatórias, edema e perda do epitélio corneal.",
+            "efeitos_colaterais": [
+              "O tratamento envolve colírios lubrificantes e, em casos mais dolorosos, analgésicos ou anti-inflamatórios tópicos (AINEs). O armazenamento e a instabilidade desses compostos podem ser comprometidos em ambientes de calor extremo, além de os AINEs tópicos poderem causar ceratopatia tóxica ou atrasar a epitelização se o olho estiver excessivamente irritado pela radiação e pelo suor térmico."
+            ],
+            "dados_empiricos": [
+              "Relatórios de saúde ocupacional indicam um aumento expressivo de ceratites actínicas em trabalhadores externos durante ondas de calor intenso e dias de alta radiação solar."
+            ]
+          },
+          {
+            "nome": "Pterígio",
+            "fisiopatologia": "Crescimento fibrovascular benigno da conjuntiva sobre a córnea. É impulsionado pela exposição crônica aos raios UV, agravada por ventos quentes, poeira e ressecamento. A radiação danifica as células-mãe limbares e induz estresse oxidativo, liberando fatores de crescimento que estimulam a proliferação de novos vasos sanguíneos e tecido conjuntivo.",
+            "efeitos_colaterais": [
+              "O uso prolongado de colírios com corticosteróides para controlar a inflamação, sob altas temperaturas e exposição ao sol, aumenta o risco de hipertensão intraocular, catarata secundária e infecções oportunistas devido à imunossupressão local."
+            ],
+            "dados_empiricos": [
+              "Estima-se que o pterígio afete cerca de 8% da população mundial (aproximadamente 553 milhões de pessoas), com prevalência significativamente maior em regiões tropicais, equatoriais e de intenso calor e radiação."
+            ]
+          },
+          {
+            "nome": "Catarata",
+            "fisiopatologia": "Opacificação progressiva do cristalino. O estresse térmico ambiental somado à radiação UV crônica induz a foto-oxidação das proteínas do cristalino (cristalinas), levando à agregação proteica insolúvel e perda de transparência. O calor elevado acelera reações metabólicas sistêmicas que afetam o humor aquoso e a nutrição do cristalino.",
+            "efeitos_colaterais": [
+              "A catarata avançada exige tratamento cirúrgico, cujo pós-operatório utiliza colírios de antibióticos e corticosteróides. Sob calor extremo, a degradação de princípios ativos em frascos abertos é acelerada; além disso, o uso prolongado de corticóides sob forte estresse térmico eleva o risco de picos hipertensivos oculares."
+            ],
+            "dados_empiricos": [
+              "A Organização Mundial da Saúde (OMS) aponta a catarata como a principal causa de cegueira tratável no mundo, sendo acelerada pelo aquecimento global e exposição cumulativa a altas temperaturas em países em desenvolvimento."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Cutâneas",
         "doencas": [
-          "Ressecamento de pele",
-          "Dermatite"
+          {
+            "nome": "Ressecamento de pele",
+            "fisiopatologia": "O aumento das temperaturas e o ar seco provocam a evaporação acelerada da água transepidérmica, comprometendo a função de barreira do estrato córneo e reduzindo os fatores de hidratação natural da pele.",
+            "efeitos_colaterais": [
+              "O uso de tratamentos tópicos à base de retinóides ou ácidos esfoliantes, quando expostos ao calor extremo e suor, gera hiper-reatividade cutânea, eritema severo, irritação e queimaduras químicas secundárias pela vasodilatação periférica induzida pelo calor."
+            ],
+            "dados_empiricos": [
+              "Ondas de calor extremo registram picos de mais de 20% de aumento nos atendimentos dermatológicos por ressecamento severo, prurido crônico e fissuras cutâneas em populações vulneráveis e idosos."
+            ]
+          },
+          {
+            "nome": "Dermatite",
+            "fisiopatologia": "O calor excessivo e a umidade alteram o microbioma cutâneo e estimulam a sudorese intensa. O suor contém sais e alérgenos que, em contato com a pele com barreira comprometida, ativam vias imunológicas inflamatórias, intensificando o prurido e as lesões eczematosas.",
+            "efeitos_colaterais": [
+              "Os corticosteróides tópicos, quando aplicados sob calor e suor excessivos, sofrem aumento de oclusão e absorção sistêmica, o que potencializa efeitos adversos como atrofia cutânea, estrias, telangiectasias e foliculite. Antistamínicos orais usados para o prurido podem causar boca seca e sonolência, agravando os riscos de desidratação sob altas temperaturas."
+            ],
+            "dados_empiricos": [
+              "Estudos clínicos demonstram correlação direta entre elevações bruscas de temperatura ambiente e exacerbações agudas (surtos) de dermatite atópica que necessitam de intervenção médica de urgência."
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "Alterações de Adoecimento Mental",
+        "doencas": [
+          {
+            "nome": "Esquizofrenia",
+            "fisiopatologia": "O calor extremo compromete o centro termorregulador corporal e degrada o sono, agindo como gatilho biológico para surtos.",
+            "efeitos_colaterais": [
+              "Antipsicóticos: Inibem a sudorese (anidrose/hipohidrose), interferem no centro termorregulador hipotalâmico e reduzem a dissipação de calor, causando hipertermia e alto risco de golpe de calor (insolação)."
+            ],
+            "dados_empiricos": [
+              "Maior risco de internações psiquiátricas e atendimentos de emergência por esquizofrenia durante ondas de calor (Park et al., 2024; Nori-Sarma et al., 2022)."
+            ]
+          },
+          {
+            "nome": "Transtorno Afetivo Bipolar",
+            "fisiopatologia": "O calor excessivo compromete o sono noturno e a regulação circadiana, gerando estresse biológico que descompensa episódios maníacos ou depressivos.",
+            "efeitos_colaterais": [
+              "Estabilizadores de Humor e Antipsicóticos: Prejudicam a vasodilatação periférica e a resposta sudocorretora, impedindo o resfriamento corporal e acelerando a exaustão pelo calor."
+            ],
+            "dados_empiricos": [
+              "Elevação comprovada no risco de hospitalizações e emergências por transtorno bipolar em ondas de calor (Park et al., 2024; Nori-Sarma et al., 2022)"
+            ]
+          },
+          {
+            "nome": "Transtorno por Uso de Álcool e Outras Drogas",
+            "fisiopatologia": "Álcool e drogas alteram a resposta vasomotora e a percepção do risco térmico, acelerando a desidratação e o colapso circulatório.",
+            "efeitos_colaterais": [
+              "Anfetaminas e Álcool: A combinação de substâncias psicoativas reduz drasticamente a margem de segurança termorreguladora, causando hipertermia grave e exaustão física."
+            ],
+            "dados_empiricos": [
+              "Registra-se aumento da mortalidade e de hospitalizações de pessoas com transtornos por uso de substâncias durante ondas de calor (Schmeltz & Gamble, 2017)."
+            ]
+          },
+          {
+            "nome": "Comportamento Suicida (Ideação e Tentativa)",
+            "fisiopatologia": "O estresse térmico prolongado e a privação do sono afetam o controle neuroquímico de impulsos e intensificam o sofrimento emocional",
+            "efeitos_colaterais": [
+              "Antidepressivos e Anticolinérgicos: Prejudicam a adaptação ao calor e provocam desconforto físico acentuado (boca seca, alteração do suor), exacerbando a vulnerabilidade emocional."
+            ],
+            "dados_empiricos": [
+              "Aumento da temperatura e ondas de calor estão associados ao aumento direto nas taxas de suicídio (Burke et al., 2018; Mullins & White, 2019; Thompson et al., 2023)"
+            ]
+          }
         ]
       }
     ],
@@ -107,70 +522,344 @@
   "inundacoes": {
     "nome": "Inundações",
     "cor": "#7C9FF2",
-    "meses_pico": [1, 2],
+    "meses_pico": [
+      1,
+      2
+    ],
     "alerta_atual": "Inundações",
     "alteracoes": [
       {
         "tipo": "Alterações Cardiovasculares",
         "doencas": [
-          "Taquicardia",
-          "Hipertensão",
-          "Hipotensão",
-          "Insuficiência cardíaca"
+          {
+            "nome": "Taquicardia",
+            "fisiopatologia": "O trauma agudo, o deslocamento forçado e o risco iminente durante inundações ativam intensamente o eixo hipotálamo-hipófise-adrenal e o sistema nervoso simpático, liberando catecolaminas (adrenalina e noradrenalina) que aumentam o automatismo do nó sinusal e a frequência cardíaca",
+            "efeitos_colaterais": [
+              "Palpitações, desconforto precordial, ansiedade aguda, dispneia leve e maior consumo de oxigênio pelo miocárdio."
+            ],
+            "dados_empiricos": [
+              "Estudos pós-desastres hidrológicos registram aumento imediato na frequência cardíaca média e nos atendimentos por taquiarritmias sinusais nas primeiras semanas após grandes enchentes."
+            ]
+          },
+          {
+            "nome": "Hipertensão",
+            "fisiopatologia": "O estresse psicossocial severo, a privação de sono em abrigos e a interrupção abrupta do acesso a medicamentos anti-hipertensivos de uso contínuo promovem descarga adrenérgica sustentada, vasoconstrição periférica e retenção de sódio, elevando os níveis pressóricos.",
+            "efeitos_colaterais": [
+              "Cefaleia occipital, tontura, epistaxe, emergências hipertensivas e aumento do risco de eventos cerebrovasculares e coronarianos agudos."
+            ],
+            "dados_empiricos": [
+              "Coortes após grandes inundações demonstram elevação média de 5 a 15 mmHg na pressão arterial sistólica da população afetada e aumento significativo nas internações por crises hipertensivas no primeiro mês pós-evento."
+            ]
+          },
+          {
+            "nome": "Hipotensão",
+            "fisiopatologia": "Em cenários de enchentes, a hipotensão decorre principalmente da hipovolemia secundária a doenças diarreicas agudas (por água contaminada), desidratação por falta de água potável ou choque séptico associado a infecções graves como leptospirose e infecções cutâneas.",
+            "efeitos_colaterais": [
+              "Tontura, síncope, taquicardia compensatória, extremidades frias, oligúria e risco de choque hipovolêmico ou séptico."
+            ],
+            "dados_empiricos": [
+              "Relatórios epidemiológicos de desastres climáticos apontam que a desidratação por surtos gastrointestinais e a sepse pós-enchente são causas recorrentes de instabilidade hemodinâmica e hipotensão nos serviços de urgência."
+            ]
+          },
+          {
+            "nome": "Insuficiência cardíaca",
+            "fisiopatologia": "A perda de medicações essenciais (diuréticos, betabloqueadores e IECA), o consumo de alimentos ultraprocessados ricos em sódio nos abrigos, o estresse adrenérgico e o esforço físico excessivo durante resgates e limpeza provocam sobrecarga volêmica e descompensação hemodinâmica.",
+            "efeitos_colaterais": [
+              "Dispneia paroxística noturna, ortopneia, edema periférico acentuado, fadiga intensa, congestão pulmonar e hospitalização de urgência."
+            ],
+            "dados_empiricos": [
+              "Estudos observacionais após grandes enchentes evidenciam aumento de 20% a 40% nas admissões hospitalares por insuficiência cardíaca descompensada nas semanas seguintes ao desastre, sobretudo pela descontinuidade terapêutica."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Respiratórias",
         "doencas": [
-          "Alergias",
-          "Dispneia",
-          "Asma",
-          "Hiper-reatividade brônquica",
-          "Infecções respiratórias"
+          {
+            "nome": "Alergias",
+            "fisiopatologia": "Proliferação de mofo e fungos em ambientes úmidos → alérgenos (esporos) que desencadeiam asma e rinite.",
+            "efeitos_colaterais": [
+              "Externo: anti-histamínicos de 1ª geração → sonolência, boca seca, ↓ sudorese; os de 2ª geração são menos sedativos."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Dispneia",
+            "fisiopatologia": "Piora da qualidade do ar interno (umidade, mofo, ventilação inadequada) e ↑ de partículas finas agravam doenças respiratórias crônicas.",
+            "efeitos_colaterais": [
+              "Guia: eventos extremos podem comprometer o abastecimento e o armazenamento de medicamentos de uso contínuo. Externo (rótulo FDA): calor e umidade degradam o inalador; spray acima de 49 °C pode romper."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Asma",
+            "fisiopatologia": "Mofo, umidade e ↑ de PM2,5 após enchentes agravam a asma; piora em abrigos com aglomeração e pouca ventilação.",
+            "efeitos_colaterais": [
+              "Guia: eventos extremos podem comprometer o abastecimento e o armazenamento de medicamentos de uso contínuo. Externo (rótulo FDA): calor e umidade degradam o inalador; spray acima de 49 °C pode romper."
+            ],
+            "dados_empiricos": [
+              "Abrigos temporários: fungos no ar exacerbam asma (Poole et al., 2019)."
+            ]
+          },
+          {
+            "nome": "Hiper-reatividade brônquica",
+            "fisiopatologia": "Exposição a mofo, partículas finas e umidade → inflamação e hiper-reatividade das vias aéreas.",
+            "efeitos_colaterais": [
+              "Guia: eventos extremos podem comprometer o abastecimento e o armazenamento de medicamentos de uso contínuo. Externo (rótulo FDA): calor e umidade degradam o inalador; spray acima de 49 °C pode romper."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Infecções respiratórias",
+            "fisiopatologia": "Mofo pode causar micoses de vias aéreas; aumenta risco de pneumonia e infecções agudas, sobretudo com água/ambiente contaminados, aglomeração e falta de ventilação. Em abrigos, risco de tuberculose.",
+            "efeitos_colaterais": [
+              "Guia: eventos extremos podem comprometer o abastecimento e o armazenamento de medicamentos de uso contínuo. Externo (rótulo FDA): calor e umidade degradam o inalador; spray acima de 49 °C pode romper."
+            ],
+            "dados_empiricos": [
+              "Abrigos com superlotação e má ventilação ↑ risco de infecções respiratórias, inclusive tuberculose."
+            ]
+          }
         ]
       },
       {
         "tipo": "Zoonoses e doenças de transmissão vetorial",
         "doencas": [
-          "Dengue",
-          "Chikungunya",
-          "Zika",
-          "Malária",
-          "Malária placentária"
+          {
+            "nome": "Dengue",
+            "fisiopatologia": "Após o recuo das águas de inundações, formam-se  pontos de água parada e limpa ou pouco poluída, criando o ambiente ideal para a reprodução do mosquito transmissor (Aedes aegypti), multiplicando os criadouros e acelerando o ciclo de transmissão.",
+            "efeitos_colaterais": [
+              "O tratamento fundamenta-se em hidratação rigorosa e analgésicos/antitérmicos (paracetamol ou dipirona). O uso inadequado de anti-inflamatórios não esteroides (AINEs, como o ácido acetilsalicílico/AAS e ibuprofeno) agrava severamente o risco de hemorragias em decorrência da trombocitopenia induzida. Em cenários de inundações, o isolamento e o corte de serviços de saúde favorecem a automedicação incorreta com AINEs e agravam quadros de desidratação caso o acesso à água potável seja interrompido."
+            ],
+            "dados_empiricos": [
+              "A Organização Mundial da Saúde (OMS) aponta que a dengue atinge dezenas de milhões de pessoas globalmente, com dezenas de milhares de óbitos anuais. Desastres climáticos e enchentes correlacionam-se diretamente com surtos explosivos devido à destruição do saneamento básico e à multiplicação descontrolada dos criadouros vetoriais."
+            ]
+          },
+          {
+            "nome": "Chikungunya",
+            "fisiopatologia": "Causada pelo vírus Chikungunya (CHIKV) e transmitida por Aedes aegypti e Aedes albopictus. As enchentes aumentam a densidade vetorial e a expansão de criadouros. Fisiologicamente, o vírus infecta fibroblastos e tecidos articulares, induzindo forte infiltração de macrófagos e citocinas pró-inflamatórias, o que resulta em poliartralgia aguda intensa e incapacitante, podendo se tornar crônica.",
+            "efeitos_colaterais": [
+              "O manejo baseia-se em paracetamol e analgésicos, além de opioides ou anti-inflamatórios sob estrita supervisão médica. O sem controle de AINEs em caso de enchentes dificulta o atendimento médico, o que pode causar gastrite erosiva, úlceras pépticas e disfunção renal. Além disso, efeitos colaterais gastrointestinais de fármacos somados à insalubridade pós-enchente agravam o estado geral do paciente."
+            ],
+            "dados_empiricos": [
+              "O Brasil registra centenas de milhares de casos prováveis anualmente, com surtos marcados por períodos chuvosos extremos e enchentes que provocam afastamento laboral prolongado devido à persistência das dores articulares."
+            ]
+          },
+          {
+            "nome": "Zika",
+            "fisiopatologia": "O Zika vírus (ZIKV) é transmitido pelo Aedes aegypti. As enchentes aumentam a proliferação do vetor nas áreas urbanas afetadas por meio da criação de novos habitats (o volume excessivo de água das chuvas e das inundações gera inúmeros recipientes temporários e permanentes (como poças, calhas entupidas, lixo acumulado e reservatórios descartados) que acumulam água limpa e parada, local ideal para a desova do mosquito), elevar a umidade relativa do ar e modular as temperaturas locais, condições que aceleram o ciclo de desenvolvimento do vetor (desde o ovo até a fase adulta) e aumentam a sua taxa de sobrevivência.",
+            "efeitos_colaterais": [
+              "O tratamento é essencialmente sintomático (paracetamol e hidratação). A automedicação com AINEs em contextos de isolamento por enchentes eleva o risco de complicações hemorrágicas e renais. Ademais, a ruptura da rede de atenção básica e do pré-natal durante desastres climáticos dificulta o monitoramento seguro de gestantes e o manejo de reações adversas."
+            ],
+            "dados_empiricos": [
+              "O impacto epidemiológico inclui milhares de casos confirmados de malformações congênitas e microcefalia associados a surtos epidêmicos potencializados por condições climáticas favoráveis à expansão vetorial."
+            ]
+          },
+          {
+            "nome": "Malária",
+            "fisiopatologia": "Causada por protozoários do gênero Plasmodium transmitidos por fêmeas de mosquitos Anopheles. As inundações formam áreas de acúmulo de água propícias para a reprodução do vetor.",
+            "efeitos_colaterais": [
+              "O tratamento exige antimaláricos específicos. Em áreas alagadas, onde há escassez de água potável, desnutrição e coinfecções, os efeitos colaterais gastrintestinais (náuseas, vômitos, dor abdominal) e a hepatotoxicidade dos antimaláricos são acentuados, elevando o risco de falência terapêutica."
+            ],
+            "dados_empiricos": [
+              "A OMS registra cerca de 250 milhões de casos anuais e centenas de milhares de mortes globalmente. Enchentes em regiões endêmicas (como a Amazônia) destroem postos de atendimento, interrompem o fluxo de suprimentos farmacêuticos e atrasam o diagnóstico laboratorial precoce (essencial em até 48 horas)."
+            ]
+          },
+          {
+            "nome": "Malária placentária",
+            "fisiopatologia": "Condição clínica específica decorrente da infecção por Plasmodium falciparum em gestantes.  As inundações aumentam a exposição vetorial das gestantes em áreas vulneráveis, somando-se ao estresse nutricional e ambiental.",
+            "efeitos_colaterais": [
+              "Manejo terapêutico envolve antimaláricos específicos. Em contextos de enchentes com colapso da rede materno-infantil e interrupção do pré-natal, o uso inadequado ou de medicamentos falsificados potencializa graves efeitos colaterais hepáticos e renais, além de resultar em falha terapêutica."
+            ],
+            "dados_empiricos": [
+              "A malária placentária constitui uma das principais causas de baixo peso ao nascer, abortos espontâneos, partos prematuros e aumento da mortalidade materna e perinatal em zonas endêmicas, sendo agravada drasticamente por desastres naturais que desestruturam a assistência à saúde da gestante."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Gastrointestinais",
         "doencas": [
-          "Infecções Gastrointestinais"
+          {
+            "nome": "Infecções Gastrointestinais",
+            "fisiopatologia": "As enchentes favorecem o desenvolvimento, a sobrevivência, a reprodução e a proliferação de certos patógenos. Aumentam o contato com água poluída e o consumo de alimentos contaminados por água parada. Com clima quente e chuvas abundantes, ocorrem florações de cianobactérias. Suas toxinas chegam à água potável e à de recreação e podem causar gastroenterite e doença hepática. Crianças e pessoas com hepatite, cirrose ou lesão renal são mais suscetíveis.",
+            "efeitos_colaterais": [
+              "- amoxicilina/clavulanato pode causar diarreia, com risco de desidratação. Quase 50% das crianças tratadas desenvolvem diarreia.",
+              "- doxiciclina pode causar náuseas e vômitos, com risco de desidratação. Quase 40% dos adultos tratados apresentam náuseas.",
+              "- cefalosporinas podem causar hipotensão.",
+              "- norfloxacino pode causar reações fototóxicas ou fotoalérgicas com exposição solar.",
+              "- Antieméticos (dolasetrona, ondansetrona, granisetrona) e procinéticos (metoclopramida): risco de desidratação por diarreia.",
+              "- Antisserotoninérgicos (domperidona, prucaloprida): risco de desidratação por náuseas, vômitos e diarreia.",
+              "- Inibidores da bomba de prótons: risco de desidratação por diarreia, náuseas e vômitos. O omeprazol também pode causar fototoxicidade ou fotoalergia."
+            ],
+            "dados_empiricos": [
+              "- Chuvas torrenciais e água poluída são as principais causas de diarreia e doenças relacionadas: cólera, criptosporidiose, infecção por E. coli, giardíase, shigelose, febre tifoide e hepatite A.",
+              "- Campylobacter e Cryptosporidium frequentemente surgem após chuvas e enchentes ligadas ao calor intenso.",
+              "- Mais de 700 mil brasileiros foram deslocados em 2022, principalmente por enchentes.",
+              "- Para inundações, a literatura científica não constata sintomas gastrointestinais isolados, intoxicação alimentar ou disfunção hepática."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Neurológicas",
         "doencas": [
-          "Parkinson",
-          "Alzheimer",
-          "Alterações de aprendizagem",
-          "Epilepsia",
-          "Síndrome de Guillain-Barré"
+          {
+            "nome": "Parkinson",
+            "fisiopatologia": "as inundações e chuvas intensas podem favorecer o desenvolvimento da doença de Parkinson devido à contaminação da água potável por substâncias tóxicas. Durante esses eventos, a água pode provocar a lixiviação do solo, especialmente de áreas agrícolas, transportando metais pesados, como o manganês, para rios e reservatórios utilizados no abastecimento. A exposição a essas substâncias pode provocar danos aos neurônios e processos de neurodegeneração, favorecendo o aparecimento do Parkinson.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "A exposição a agrotóxicos, bem como a exposição a outros fatores,",
+              "pode aumentar o risco do mal de Parkinson (Costello et al., 2009).                                     A exposição ao manganês pode causar surgimento do mal de Parkinson",
+              "(Harischandra et al., 2019)."
+            ]
+          },
+          {
+            "nome": "Alzheimer",
+            "fisiopatologia": "As inundações podem favorecer o desenvolvimento da doença de Alzheimer por meio da contaminação da água potável por metais pesados. Durante esses eventos, substâncias tóxicas presentes no solo podem ser transportadas para rios e reservatórios, aumentando a exposição humana a esses contaminantes. A exposição prolongada a metais pesados pode contribuir para processos de neurotoxicidade e neurodegeneração, prejudicando os neurônios e favorecendo alterações cognitivas.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Suspeita-se que a exposição a metais pesados possa estar relacionada",
+              "ao aparecimento e à exacerbação da doença de Alzheimer (Kotermanski;",
+              "Johnson, 2009)."
+            ]
+          },
+          {
+            "nome": "Alterações de aprendizagem",
+            "fisiopatologia": "Podem estar relacionadas à exposição à poluição ambiental, intensificada por eventos climáticos extremos. A exposição a poluentes atmosféricos, especialmente ao material particulado fino (MP₂,₅), pode desencadear neuroinflamação, estresse oxidativo, ativação das células da micróglia e alterações na barreira hematoencefálica. Esses processos podem prejudicar o desenvolvimento neurocognitivo infantil, afetando funções como memória, atenção e aprendizagem. Além disso, crianças são particularmente vulneráveis devido à imaturidade do sistema nervoso em desenvolvimento.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "A exposição a metais pesados agrava os problemas de aprendizagem",
+              "em crianças (Kozma et al., 2005)."
+            ]
+          },
+          {
+            "nome": "Epilepsia",
+            "fisiopatologia": "Podem contribuir para o desencadeamento de crises epilépticas devido ao estresse físico e psicológico provocado por esses eventos. As dificuldades econômicas, a perda de moradia e o deslocamento forçado podem gerar estresse crônico e transtorno de estresse pós-traumático (TEPT), que afetam o funcionamento neurológico e podem atuar como fatores desencadeantes de crises em indivíduos predispostos. Além disso, as temperaturas elevadas também podem favorecer a ocorrência de crises epilépticas.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Temperaturas elevadas em casa ou no trabalho, falta de apoio social e",
+              "estresse podem ser fatores importantes que desencadeiam crises de",
+              "epilepsia durante uma onda de calor ou outros fenômenos climáticos",
+              "extremos (Bélanger et al., 2019)."
+            ]
+          },
+          {
+            "nome": "Síndrome de Guillain-Barré",
+            "fisiopatologia": "Podem favorecer o aumento de casos de Síndrome de Guillain-Barré (SGB) devido à maior exposição da população a agentes infecciosos presentes na água e nos alimentos contaminados. Entre eles, destaca-se a bactéria Campylobacter jejuni, uma das principais infecções associadas à síndrome. A infecção pode desencadear uma resposta autoimune por mimetismo molecular, na qual o sistema imunológico produz anticorpos que reagem de forma cruzada com componentes dos nervos periféricos, especialmente os gangliosídeos. Isso provoca lesão da bainha de mielina ou do próprio axônio, prejudicando a condução dos impulsos nervosos e causando fraqueza muscular progressiva, podendo evoluir para paralisia.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Em vários países nos quais ocorreram surtos de zika, foi relatado um",
+              "aumento no número de pacientes com síndrome de Guillain-Barré",
+              "(CDC, 2016)."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações de Adoecimento Mental",
         "doencas": [
-          "Ansiedade",
-          "Depressão",
-          "Estresse pós-traumático",
-          "Problemas psico-sociais"
+          {
+            "nome": "Transtornos de Ansiedade",
+            "fisiopatologia": "Instabilidade psicológica gerada por abrigos temporários superlotados, falta de privacidade e quebra das redes comunitárias.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Estudos apontam alta prevalência de ansiedade persistente em sobreviventes de enchentes em áreas vulneráveis (Carvalho & Oliveira, 2020)."
+            ]
+          },
+          {
+            "nome": "Depressão",
+            "fisiopatologia": "Sofrimento psíquico induzido pela perda de entes queridos, desraizamento social, destruição de bens e incerteza na reconstrução.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Inundações provocam aumento duradouro de sintomas depressivos e morbidades psíquicas na população afetada (Carvalho & Oliveira, 2020; Escobar Carías et al., 2022)."
+            ]
+          },
+          {
+            "nome": "Transtorno de Estresse Pós-Traumático (TEPT)",
+            "fisiopatologia": "Resposta contínua de estresse induzida pelo pavor de morte, destruição de moradias, perdas patrimoniais e ruptura do território",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Exposição a enchentes e inundações está associada a um aumento direto na prevalência de TEPT (Carvalho & Oliveira, 2020; Nöthling et al., 2024)"
+            ]
+          },
+          {
+            "nome": "Problemas psico-sociais",
+            "fisiopatologia": "Sobrecarga emocional contínua gerada por perdas materiais, destruição da moradia, perda do território e ruptura de vínculos comunitários de apoio.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Estressores secundários pós-enchente (perdas materiais e dificuldades com indenizações) geram sofrimento psicossocial duradouro (McKenzie et al., 2022; Escobar Carías et al., 2022)."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações de Saúde Materno-Infantil",
         "doencas": [
-          "Parto prematuro",
-          "Microcefalia",
-          "Baixo peso ao nascer",
-          "Mortalidade perinatal"
+          {
+            "nome": "Parto prematuro",
+            "fisiopatologia": "Calor, inundações e seca favorecem a malária e a dengue, que podem causar infecção placentária, que pode levar ao parto prematuro. Parto prematuro é quando o bebê nasce antes de 37 semanas completas de gestação.",
+            "efeitos_colaterais": [
+              "Podem ser usados medicamentos para o manejo do trabalho de parto prematuro, como tocolíticos, progesterona, corticosteroides antenatais e sulfato de magnésio."
+            ],
+            "dados_empiricos": [
+              "-A razão de chances (odds ratio, OR) de parto prematuro devido à malária placentária é 3,51 (1,84-6,68).                                                                                                                                         -A OR para parto prematuro devido à dengue é de 2,4 (1,3-4,4)."
+            ]
+          },
+          {
+            "nome": "Microcefalia",
+            "fisiopatologia": "Calor, inundações e secas contribuem para a disseminação do vírus zika, o que aumenta a probabilidade de infecção por zika durante a gravidez e, portanto, o nascimento de crianças com microcefalia, que é uma malformação congênita na qual o bebê nasce com o perímetro cefálico (a medida da cabeça) significativamente menor do que o esperado para a sua idade e sexo.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Nos Estados Unidos, 6% das crianças cujas mães tiveram infecção por zika durante a gravidez (confirmada por testes laboratoriais) nascem com microcefalia."
+            ]
+          },
+          {
+            "nome": "Baixo peso ao nascer",
+            "fisiopatologia": "Calor, inundações e secas favorecem a malária e a dengue, que podem causar infecção placentária\ne baixo peso ao nascer, que é o nascimento de um bebê pesando menos de 2.500 gramas, medido na primeira hora de vida e independentemente da idade gestacional.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "-A OR para baixo peso ao nascer na vigência de malária placentária é 2,06 (1,72-2,57).                                                 -A OR para baixo peso ao nascer devido à dengue é de 2,1 (1,1-4,0)."
+            ]
+          },
+          {
+            "nome": "Mortalidade perinatal",
+            "fisiopatologia": "O calor, as inundações e as secas também favorecem a malária, que pode causar infecção placentária e maior risco de mortalidade perinatal, que é a soma dos óbitos fetais (natimortos) e das mortes de recém-nascidos logo após o nascimento.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "-Em Quebec (Canadá), um estudo constatou o risco (OR) de mortalidade perinatal a termo quando a temperatura máxima no dia anterior é de 28ºC é 1,16 vezes maior do que quando a temperatura é de apenas 20ºC.  No entanto, um estudo realizado em Brisbane, Austrália, não encontrou nenhuma correlação entre temperatura e risco de mortalidade perinatal.                                                               -A chance de mortalidade perinatal em gestações com malária placentária é 2,5 vezes maior do que em gestações sem infecção."
+            ]
+          }
         ]
       }
     ],
@@ -186,77 +875,392 @@
   "secas": {
     "nome": "Secas",
     "cor": "#C78848",
-    "meses_pico": [5, 6, 7, 8, 9, 10],
+    "meses_pico": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "alerta_atual": "Secas",
     "alteracoes": [
       {
         "tipo": "Alterações Cardiovasculares",
         "doencas": [
-          "Taquicardia",
-          "Hipertensão",
-          "Arritmia cardíaca",
-          "Insuficiência cardíaca",
-          "Angina Pectoris"
+          {
+            "nome": "Taquicardia",
+            "fisiopatologia": "As secas prolongadas combinam estresse térmico, desidratação crônica e inalação de fumaça de queimadas (material particulado fino). A redução do volume plasmático e a irritação de receptores pulmonares ativam o sistema nervoso simpático, elevando a frequência cardíaca basal.",
+            "efeitos_colaterais": [
+              "Palpitações, intolerância ao esforço, fadiga, tontura e aumento da demanda metabólica cardíaca em pacientes vulneráveis."
+            ],
+            "dados_empiricos": [
+              "Pesquisas ambientais associam períodos de estiagem severa e elevada concentração de aerossóis de queimadas à redução da variabilidade da frequência cardíaca e aumento da frequência sinusal em populações expostas."
+            ]
+          },
+          {
+            "nome": "Hipertensão",
+            "fisiopatologia": "A baixa umidade relativa do ar e a escassez hídrica favorecem a desidratação e a ativação do sistema renina-angiotensina-aldosterona (SRAA). Paralelamente, a exposição contínua a partículas finas de incêndios florestais gera estresse oxidativo e disfunção endotelial, elevando a resistência vascular periférica.",
+            "efeitos_colaterais": [
+              "Elevação sustentada da pressão arterial, cefaleia, picos hipertensivos e maior risco de lesão em órgãos-alvo."
+            ],
+            "dados_empiricos": [
+              "Estudos epidemiológicos em regiões afetadas por secas e queimadas apontam aumento nas consultas e internações por hipertensão arterial sistêmica, especialmente entre idosos e trabalhadores rurais."
+            ]
+          },
+          {
+            "nome": "Arritmia cardíaca",
+            "fisiopatologia": "A inalação de fumaça de incêndios florestais e poeira mineral durante secas desencadeia inflamação sistêmica e desequilíbrio autonômico, enquanto a desidratação provoca distúrbios hidroeletrolíticos, alterando a excitabilidade elétrica do miocárdio.",
+            "efeitos_colaterais": [
+              "Palpitações, batimentos irregulares, tontura, síncope e maior incidência de fibrilação atrial e extrassístoles ventriculares."
+            ],
+            "dados_empiricos": [
+              "Séries temporais demonstram elevação nos atendimentos de emergência por arritmias cardíacas durante episódios de seca acompanhados de plumas de fumaça, com maior impacto em cardiopatas prévios."
+            ]
+          },
+          {
+            "nome": "Insuficiência cardíaca",
+            "fisiopatologia": "A exposição crônica a poluentes atmosféricos oriundos de queimadas durante estiagens promove vasoconstrição pulmonar e sistêmica, aumentando a pós-carga cardíaca. Somada ao estresse térmico e à desidratação, precipita a descompensação em corações previamente comprometidos.",
+            "efeitos_colaterais": [
+              "Dispneia progressiva, edema de membros inferiores, fadiga intensa, congestão pulmonar e necessidade de internação hospitalar."
+            ],
+            "dados_empiricos": [
+              "Estudos de coorte em áreas sujeitas a secas severas indicam aumento significativo nas taxas de hospitalização por insuficiência cardíaca entre idosos durante os meses de maior déficit hídrico e pior qualidade do ar."
+            ]
+          },
+          {
+            "nome": "Angina Pectoris",
+            "fisiopatologia": "A inalação de monóxido de carbono e partículas finas (MP_{2,5}) durante queimadas associadas à seca reduz a oferta de oxigênio ao miocárdio e promove vasoconstrição coronariana. Simultaneamente, a desidratação aumenta a viscosidade sanguínea, gerando isquemia miocárdica transitória.",
+            "efeitos_colaterais": [
+              "Dor ou queimação retroesternal desencadeada por esforços ou estresse, irradiação para braço esquerdo ou pescoço, dispneia e fadiga."
+            ],
+            "dados_empiricos": [
+              "Dados hospitalares revelam aumento nos atendimentos por angina instável e dor torácica isquêmica em períodos de seca extrema e baixa umidade do ar."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Respiratórias",
         "doencas": [
-          "Alergias",
-          "Dispneia",
-          "Asma",
-          "Infecções respiratórias"
+          {
+            "nome": "Alergias",
+            "fisiopatologia": "Alteração do início, duração e intensidade da estação de pólen; pólen e mofo liberam mediadores pró-inflamatórios, acelerando a sensibilização alérgica mediada por IgE (asma e rinite alérgica).",
+            "efeitos_colaterais": [
+              "Externo: anti-histamínicos de 1ª geração → sonolência, boca seca, ↓ sudorese; os de 2ª geração são menos sedativos."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Dispneia",
+            "fisiopatologia": "Piora da qualidade do ar (fumaça e aerossóis de incêndios, partículas) → irritação e inflamação das vias aéreas.",
+            "efeitos_colaterais": [
+              "Guia: preferir inalador de pó seco (DPI) ao spray (MDI) quando possível. Externo (rótulo FDA, albuterol HFA): taquicardia, tremor, hipocalemia e broncoespasmo paradoxal; diuréticos potencializam a hipocalemia; betabloqueadores reduzem o efeito e podem causar broncoespasmo."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Asma",
+            "fisiopatologia": "Aerossóis de queimadas e alérgenos (pólen e mofo) com sazonalidade alterada → sensibilização IgE e exacerbações.",
+            "efeitos_colaterais": [
+              "Guia: preferir inalador de pó seco (DPI) ao spray (MDI) quando possível. Externo (rótulo FDA, albuterol HFA): taquicardia, tremor, hipocalemia e broncoespasmo paradoxal; diuréticos potencializam a hipocalemia; betabloqueadores reduzem o efeito e podem causar broncoespasmo."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Infecções respiratórias",
+            "fisiopatologia": "Piora da qualidade do ar pela fumaça de incêndios florestais; barreira epitelial lesada e suscetibilidade a infecções.",
+            "efeitos_colaterais": [
+              "Sem informação no guia nem nas fontes consultadas."
+            ],
+            "dados_empiricos": [
+              "Amazônia: seca → ↑ hospitalizações respiratórias em crianças por aerossóis de incêndios (D'Amato et al., 2020)."
+            ]
+          }
         ]
       },
       {
         "tipo": "Zoonoses e doenças de transmissão vetorial",
         "doencas": [
-          "Dengue",
-          "Chikungunya",
-          "Zika",
-          "Malária",
-          "Malária placentária"
+          {
+            "nome": "Dengue",
+            "fisiopatologia": "A transmissão do vírus da dengue (DENV) pelo Aedes aegypti é influenciada pelas secas de maneira paradoxal: a escassez de abastecimento regular de água leva a população a armazenar água em recipientes inadequados dentro de casa (caixas d'água abertas, baldes, tambores), criando criadouros artificiais altamente produtivos. Fisiologicamente, a infecção causa intensa ativação imunológica com liberação de citocinas inflamatórias, gerando aumento da permeabilidade vascular, extravasamento plasmático, hemoconcentração e risco de choque circulatório.",
+            "efeitos_colaterais": [
+              "O tratamento baseia-se em hidratação rigorosa e antitérmicos/analgésicos (como paracetamol ou dipirona). Em períodos de seca extrema, a desidratação ambiental e a escassez de água potável potencializam os efeitos adversos renais e hepáticos de fármacos, além de tornarem o paciente mais vulnerável aos distúrbios hidroeletrolíticos. A automedicação com anti-inflamatórios não esteroides (AINEs), comum em cenários de desorganização do atendimento, agrava drasticamente o risco de gastrite erosiva e hemorragias devido à trombocitopenia induzida pelo vírus."
+            ],
+            "dados_empiricos": [
+              "Relatórios da Organização Mundial da Saúde (OMS) apontam que a dengue afeta dezenas de milhões de pessoas anualmente. Períodos de seca severa correlacionam-se com surtos urbanos intensos impulsionados pelo armazenamento inadequado de água nas residências, sobrecarregando os sistemas de saúde pública."
+            ]
+          },
+          {
+            "nome": "Chikungunya",
+            "fisiopatologia": "Causada pelo vírus Chikungunya e transmitida pelo Aedes aegypti e Aedes albopictus. Durante as secas, o armazenamento doméstico de água para suprir a falta de saneamento atrai os vetores para o domicílio.",
+            "efeitos_colaterais": [
+              "O manejo sintomático utiliza paracetamol e analgésicos, podendo requerer AINEs ou opioides sob prescrição. Em períodos de seca, a restrição de água e a desidratação crônica aumentam a nefrotoxicidade e os danos gástricos associados ao uso inadequado de AINEs. Ademais, a escassez de recursos hídricos dificulta o suporte básico ao paciente debilitado pelas dores articulares intensas."
+            ],
+            "dados_empiricos": [
+              "O Brasil registra centenas de milhares de casos prováveis de febre Chikungunya por ano, com impactos socioeconômicos severos decorrentes do absenteísmo laboral prolongado causado pela artralgia crônica, quadro amplificado em regiões vulneráveis à escassez hídrica."
+            ]
+          },
+          {
+            "nome": "Zika",
+            "fisiopatologia": "O Zika vírus (ZIKV) é transmitido pelo Aedes aegypti. Assim como nas demais arboviroses transmitidas por esse vetor, as secas prolongadas induzem o armazenamento massivo de água em depósitos domiciliares precários, aumentando a densidade vetorial urbana.",
+            "efeitos_colaterais": [
+              "O manejo sintomático utiliza paracetamol e analgésicos, podendo requerer AINEs ou opioides sob prescrição. Em períodos de seca, a restrição de água e a desidratação crônica aumentam a nefrotoxicidade e os danos gástricos associados ao uso inadequado de AINEs. Ademais, a escassez de recursos hídricos dificulta o suporte básico ao paciente debilitado pelas dores articulares intensas."
+            ],
+            "dados_empiricos": [
+              "O impacto epidemiológico do Zika destaca-se pelo registro de milhares de casos de malformações neurológicas associadas a surtos que encontram suporte na proliferação vetorial urbana induzida por falhas no abastecimento de água."
+            ]
+          },
+          {
+            "nome": "Malária",
+            "fisiopatologia": "Causada por protozoários do gênero Plasmodium (como P. vivax e P. falciparum), transmitidos por mosquitos Anopheles. Durante as secas, a redução do caudal dos rios forma poças de água marginais rasas, calmas, sombreadas e limpas, que constituem criadouros ideais e altamente produtivos para os Anopheles.",
+            "efeitos_colaterais": [
+              "O tratamento requer antimaláricos específicos (como arteméter e lumefantrina ou cloroquina e primaquina). Em períodos de seca, a escassez de água potável e a desnutrição agravam os efeitos colaterais gastrointestinais (náuseas, vômitos, dor abdominal) e a hepatotoxicidade dos fármacos, comprometendo a adesão terapêutica."
+            ],
+            "dados_empiricos": [
+              "A OMS relata centenas de milhões de casos anuais de malária no mundo. Períodos de seca em regiões endêmicas (como a Amazônia) alteram o regime dos rios, expandindo os criadouros dos vetores e elevando o número de casos em comunidades ribeirinhas isoladas."
+            ]
+          },
+          {
+            "nome": "Malária placentária",
+            "fisiopatologia": "Condição decorrente da infecção por Plasmodium falciparum em gestantes. As secas que alteram os cursos d'água na região amazônica intensificam a exposição de populações gestantes vulneráveis a surtos focais de transmissão por Anopheles, somando-se à insegurança alimentar e hídrica.",
+            "efeitos_colaterais": [
+              "O manejo baseia-se em antimaláricos específicos (combinações com artemisinina a partir do segundo trimestre ou quinino). Em contextos de seca severa e desassistência materno-infantil, a desidratação e a desnutrição acentuam a toxicidade hepática e renal dos antimaláricos, elevando o risco de falha terapêutica e agravamento clínico."
+            ],
+            "dados_empiricos": [
+              "A malária placentária é uma das principais causas de baixo peso ao nascer, prematuridade e morbimortalidade materna e perinatal em áreas endêmicas, sendo agravada por desastres climáticos que desorganizam os serviços de saúde de pré-natal."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Oftamológicas",
         "doencas": [
-          "Irritação nos olhos"
+          {
+            "nome": "Irritação nos olhos",
+            "fisiopatologia": "Durante períodos de estiagem e baixa umidade relativa do ar, ocorre uma elevação brusca do gradiente de pressão de vapor entre a superfície ocular e o ambiente, acelerando a evaporação da camada aquosa do filme lacrimal. Simultaneamente, a ausência de chuvas aumenta a concentração atmosférica de material particulado (poeira, fuligem e fumaça de queimadas) suspenso pelo vento.",
+            "efeitos_colaterais": [
+              "- Cloreto de Benzalcônio - BAK: Em períodos de seca severa, os pacientes tendem a instilar lágrimas artificiais com muito mais frequência para compensar a evaporação rápida. O acúmulo de conservantes como o BAK sobre uma superfície ocular já desidratada dissolve a camada lipídica da lágrima e causa toxicidade epitelial cumulativa (ceratite medicamentosa), gerando um efeito rebote que piora a irritação e o ressecamento.",
+              "- Colírios descongestionantes/vasoconstritores (ex.: nafazolina, tetrizolina): Sob clima seco, a vasoconstrição reduz ainda mais o aporte sanguíneo e a secreção lacrimal basal, provocando hiperemia de rebote intensa, midríase transitória e risco de elevação da pressão intraocular.",
+              "- Anti-histamínicos orais e tópicos (usados quando há alergia ocular associada à poeira/pólen): Possuem ação anticolinérgica que inibe a secreção das glândulas lacrimais, piorando a xeroftalmia (olho seco)."
+            ],
+            "dados_empiricos": [
+              "Estudos clínicos e ambientais demonstram que cada queda de 10% na umidade relativa do ar aumenta significativamente a taxa de evaporação lacrimal e a queixa de sintomas oculares irritativos. Em regiões brasileiras afetadas por secas prolongadas e fumaça de queimadas (como o Centro-Oeste e o interior do Sudeste no inverno/primavera), serviços de urgência oftalmológica registram aumentos de 30% a 50% nos atendimentos por irritação ocular aguda, olho seco sintomático e conjuntivite irritativa/alérgica."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Gastrointestinais",
         "doencas": [
-          "Infecções Gastrointestinais"
+          {
+            "nome": "Infecções Gastrointestinais",
+            "fisiopatologia": "A seca favorece a sobrevivência e a proliferação de certos patógenos e aumenta a concentração de contaminantes na água. A queda da pressão nos sistemas de água potável pode causar contaminação cruzada. A escassez leva ao uso de fontes alternativas menos seguras, como açudes e tanques, e restringe as práticas de higiene pessoal.",
+            "efeitos_colaterais": [
+              "- amoxicilina/clavulanato pode causar diarreia, com risco de desidratação. Quase 50% das crianças tratadas desenvolvem diarreia.",
+              "- doxiciclina pode causar náuseas e vômitos, com risco de desidratação. Quase 40% dos adultos tratados apresentam náuseas.",
+              "- cefalosporinas podem causar hipotensão.",
+              "- norfloxacino pode causar reações fototóxicas ou fotoalérgicas com exposição solar.",
+              "- Antieméticos (dolasetrona, ondansetrona, granisetrona) e procinéticos (metoclopramida): risco de desidratação por diarreia.",
+              "- Antisserotoninérgicos (domperidona, prucaloprida): risco de desidratação por náuseas, vômitos e diarreia.",
+              "- Inibidores da bomba de prótons: risco de desidratação por diarreia, náuseas e vômitos. O omeprazol também pode causar fototoxicidade ou fotoalergia."
+            ],
+            "dados_empiricos": [
+              "- Muitas doenças diarreicas são sazonais, o que sugere sensibilidade ao clima.",
+              "- Inundações e secas aumentam o risco de doenças diarreicas.",
+              "- Para seca, a literatura científica não constata sintomas gastrointestinais isolados, intoxicação alimentar ou disfunção hepática."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Neurológicas",
         "doencas": [
-          "AVC",
-          "Epilepsia",
-          "Esclerose Múltipla",
-          "Meningite meningocócica",
-          "Síndrome de Guillain-Barré"
+          {
+            "nome": "AVC",
+            "fisiopatologia": "As secas podem aumentar o risco de acidentes vasculares cerebrais (AVC) por meio de alterações inflamatórias e circulatórias. A resposta inflamatória sistêmica (SIRS), associada à desidratação e à redução do volume intravascular, pode favorecer a hemoconcentração, aumentar a viscosidade sanguínea e facilitar a formação de trombos (tromboembolismo). Esses mecanismos podem comprometer a circulação cerebral, provocando obstrução dos vasos sanguíneos e, consequentemente, um AVC isquêmico.",
+            "efeitos_colaterais": [
+              "Diuréticos: aumentam a eliminação de água e eletrólitos pelos rins, favorecendo a desidratação e a redução do volume sanguíneo. Isso pode comprometer a circulação cerebral.",
+              "Betabloqueadores: podem reduzir a capacidade de adaptação cardiovascular ao calor, dificultando o aumento do débito cardíaco necessário à termorregulação.",
+              "Bloqueadores dos canais de cálcio: podem interferir na regulação vascular e na resposta cardiovascular durante o estresse térmico.",
+              "Antiarrítmicos: podem interferir na adaptação cardiovascular às alterações provocadas pelo calor.",
+              "Anticolinérgicos: reduzem a sudorese, prejudicando a dissipação de calor e aumentando o risco de hipertermia."
+            ]
+          },
+          {
+            "nome": "Epilepsia",
+            "fisiopatologia": "Podem afetar indiretamente pessoas com epilepsia devido ao estresse psicológico provocado pelos eventos climáticos extremos. A escassez de água, as dificuldades econômicas, a insegurança alimentar e os deslocamentos populacionais podem favorecer o desenvolvimento de estresse crônico e transtorno de estresse pós-traumático (TEPT). Essas condições podem alterar a atividade neurológica e atuar como fatores desencadeantes de crises epilépticas em indivíduos predispostos. Entretanto, o guia ressalta que o mecanismo fisiopatológico exato dessa associação ainda é desconhecido.",
+            "efeitos_colaterais": [
+              "Carbamazepina: pode provocar hiponatremia, condição que altera o equilíbrio hidroeletrolítico e pode favorecer crises convulsivas.",
+              "Topiramato: pode diminuir a sudorese, dificultando a regulação da temperatura corporal, além de aumentar o risco de cálculos renais.",
+              "Valproato: pode provocar alterações hepáticas e, raramente, pancreatite.",
+              "Fenitoína: pode causar tontura, alterações de equilíbrio e toxicidade neurológica.",
+              "- Durante as secas, a desidratação e o estresse térmico podem agravar alguns desses riscos, especialmente as alterações hidroeletrolíticas e a formação de cálculos renais."
+            ],
+            "dados_empiricos": [
+              "Temperaturas elevadas em casa ou no trabalho, falta de apoio social e",
+              "estresse podem ser fatores importantes que desencadeiam crises de",
+              "epilepsia durante uma onda de calor ou outros fenômenos climáticos",
+              "extremos (Bélanger et al., 2019)."
+            ]
+          },
+          {
+            "nome": "Esclerose Múltipla",
+            "fisiopatologia": "Em pessoas que já apresentam esclerose múltipla, as temperaturas elevadas podem provocar piora temporária de sintomas preexistentes, como fadiga, fraqueza muscular, alterações visuais e dificuldades de equilíbrio. Esse fenômeno é conhecido como fenômeno de Uhthoff, no qual o aumento da temperatura corporal prejudica temporariamente a condução dos impulsos nervosos em axônios desmielinizados.",
+            "efeitos_colaterais": [
+              "O tratamento da esclerose múltipla pode envolver medicamentos imunomoduladores e imunossupressores, como interferon beta, fingolimode e ocrelizumabe. Alguns efeitos adversos incluem alterações hepáticas, maior suscetibilidade a infecções e alterações cardiovasculares",
+              "Durante as secas, o aumento das temperaturas pode provocar desidratação e dificultar a regulação térmica. Além disso, o calor pode desencadear o fenômeno de Uhthoff, caracterizado pela piora temporária de sintomas neurológicos preexistentes devido ao comprometimento da condução nervosa em fibras desmielinizadas."
+            ],
+            "dados_empiricos": [
+              "Em pacientes com esclerose múltipla, a exposição a temperaturas",
+              "elevadas está supostamente relacionada ao aumento da fadiga e a",
+              "outros sintomas da doença, o que os obriga a cortar suas atividades",
+              "sociais e reduz sua capacidade de trabalhar (Summers ; Simmons;",
+              "Verikios, 2012)."
+            ]
+          },
+          {
+            "nome": "Meningite meningocócica",
+            "fisiopatologia": "Os períodos de seca podem contribuir para o aumento da transmissão do meningococo (Neisseria meningitidis). Durante a estação seca, os ventos carregados de poeira e as temperaturas mais baixas durante a noite, associados à maior ocorrência de infecções das vias aéreas superiores, podem provocar danos à mucosa da nasofaringe. Essa lesão facilita a entrada da bactéria no organismo, favorecendo a colonização e a invasão da corrente sanguínea. A partir daí, o meningococo pode atingir as meninges, causando inflamação e desencadeando a meningite meningocócica.",
+            "efeitos_colaterais": [
+              "O tratamento da meningite meningocócica é realizado principalmente com antibióticos, como ceftriaxona e cefotaxima. Entre os possíveis efeitos adversos estão diarreia, náuseas, reações alérgicas e alterações da função hepática. Em períodos de seca, a escassez de água potável pode favorecer a desidratação, especialmente em pacientes que apresentam febre, vômitos e dificuldade de ingestão de líquidos. A redução do volume circulante pode comprometer a perfusão renal, aumentando a preocupação com possíveis complicações renais durante o tratamento."
+            ],
+            "dados_empiricos": [
+              "- Cerca de 30 mil casos de meningite meningocócica são relatados",
+              "anualmente na África subsaariana (OMS, 2018).",
+              "- A doença meningocócica tem potencial de se espalhar do Saara para o",
+              "Caribe (Sakhamuri; Cummings, 2019)."
+            ]
+          },
+          {
+            "nome": "Síndrome de Guillain-Barré",
+            "fisiopatologia": "Podem favorecer o aumento dos casos de Síndrome de Guillain-Barré devido à maior disseminação do vírus Zika, cuja transmissão é favorecida por condições climáticas associadas à seca. A infecção pelo vírus pode desencadear uma resposta autoimune por mimetismo molecular, na qual o sistema imunológico passa a atacar componentes dos nervos periféricos, provocando desmielinização ou lesão axonal. Como consequência, ocorre comprometimento da condução dos impulsos nervosos, causando fraqueza muscular progressiva e, em casos graves, paralisia.",
+            "efeitos_colaterais": [
+              "O tratamento da SGB envolve principalmente imunoglobulina intravenosa (IVIG) ou plasmaférese. A imunoglobulina pode causar efeitos adversos como cefaleia, náuseas, febre e, mais raramente, lesão renal aguda e eventos tromboembólicos. Durante períodos de seca, a escassez de água e as temperaturas elevadas podem favorecer a desidratação e a hemoconcentração. Isso pode aumentar a preocupação com complicações tromboembólicas e renais durante a administração de imunoglobulina, especialmente em pacientes já vulneráveis."
+            ],
+            "dados_empiricos": [
+              "Em vários países nos quais ocorreram surtos de zika, foi relatado um",
+              "aumento no número de pacientes com síndrome de Guillain-Barré",
+              "(CDC, 2016)."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações de Adoecimento Mental",
         "doencas": [
-          "Ansiedade",
-          "Depressão",
-          "Estresse pós-traumático",
-          "Problemas psico-sociais"
+          {
+            "nome": "Transtornos de Ansiedade",
+            "fisiopatologia": "Tensão diária persistente provocada pela escassez de água, quebra de safras, perda de renda e ameaça de deslocamento forçado.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "A seca prolongada está diretamente correlacionada ao aumento de sintomas de ansiedade em agricultores e povos indígenas (Vins et al., 2015; Grande et al., 2023)."
+            ]
+          },
+          {
+            "nome": "Trantorno Depressivo",
+            "fisiopatologia": "Ativação persistente do eixo de estresse por perdas agrícolas, estresse financeiro sustentado, isolamento e incerteza quanto ao futuro.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Estiagens severas causam aumentos sustentados de depressão no meio rural e em povos indígenas por meses ou anos (Padrón-Monedero et al., 2024; Vins et al., 2015; Grande et al., 2023, 2024)."
+            ]
+          },
+          {
+            "nome": "Transtorno de Estresse Pós-Traumático (TEPT)",
+            "fisiopatologia": "O estresse gradativo e contínuo decorrente do colapso da subsistência agrícola, falência econômica e deslocamento forçado induz vivência traumática prolongada.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "O estresse decorrente de secas severas e migração forçada desencadeia sintomas pós-traumáticos sustentados em comunidades afetadas (APA, 2023; Cianconi et al., 2020)"
+            ]
+          },
+          {
+            "nome": "Problemas psico-sociais",
+            "fisiopatologia": "Ativação persistente do estresse provocada pela insegurança hídrica/alimentar, perda da autonomia produtiva e incerteza quanto ao futuro da comunidade.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "As condições em saúde mental associadas à seca podem persistir por meses ou anos, afetando a estrutura de famílias e comunidades rurais (Vins et al., 2015)."
+            ]
+          },
+          {
+            "nome": "Transtorno por Uso de Álcool e Outras Drogas",
+            "fisiopatologia": "Uso de substâncias psicoativas como tentativa de alívio do estresse socioeconômico e do sofrimento prolongado provocado pela seca.",
+            "efeitos_colaterais": [
+              "Álcool e Substâncias: O uso de álcool associado à desidratação crônica da seca acelera a lesão renal e o colapso físico sistêmico"
+            ],
+            "dados_empiricos": [
+              "Registra-se aumento no uso abusivo de álcool e outras drogas em populações rurais expostas a secas prolongadas (Padrón-Monedero et al., 2024; Vins et al., 2015)."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações de Saúde Materno-Infantil",
         "doencas": [
-          "Desnutrição materna",
-          "Parto prematuro",
-          "Microcefalia",
-          "Baixo peso ao nascer",
-          "Mortalidade perinatal"
+          {
+            "nome": "Desnutrição materna",
+            "fisiopatologia": "As mulheres em geral, mais especialmente as gestantes, podem correr um\nrisco maior de desnutrição durante períodos de seca devido à escassez de\nalimentos.",
+            "efeitos_colaterais": [
+              "Não existe um medicamento específico para tratar a desnutrição materna, o tratamento deve envolver a readequação alimentar e nutricional, acompanhada do tratamento da causa e, quando indicado, do uso de suplementos ou medicamentos direcionados"
+            ],
+            "dados_empiricos": [
+              "Os eventos climáticos relacionados às mudanças climáticas, como a seca, deixam as mulheres mais vulneráveis, especialmente por causa da desnutrição."
+            ]
+          },
+          {
+            "nome": "Parto prematuro",
+            "fisiopatologia": "Calor, inundações e seca favorecem a malária e a dengue, que podem causar infecção placentária, que pode levar ao parto prematuro. O calor também pode ter um efeito direto, independentemente de doenças transmitidas por vetores: estimulação das contrações uterinas, sensibilidade elevada no final da gravidez ou desidratação, que estimula a secreção de hormônios hipofisários, dando início ao trabalho de parto. Parto prematuro é quando o bebê nasce antes de 37 semanas completas de gestação.",
+            "efeitos_colaterais": [
+              "Podem ser usados medicamentos para o manejo do trabalho de parto prematuro, como tocolíticos, progesterona, corticosteroides antenatais e sulfato de magnésio."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Microcefalia",
+            "fisiopatologia": "Calor, inundações e secas contribuem para a disseminação do vírus zika, o que aumenta a probabilidade de infecção por zika durante a gravidez e, portanto, o nascimento de crianças com microcefalia, que é uma malformação congênita na qual o bebê nasce com o perímetro cefálico (a medida da cabeça) significativamente menor do que o esperado para a sua idade e sexo.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Baixo peso ao nascer",
+            "fisiopatologia": "A desnutrição materna causada pela seca aumenta a probabilidade de baixo peso ao nascer. Além disso, dificultar a higiene durante uma seca e as doenças diarreicas por ela causadas também podem afetar a desnutrição materna e o baixo peso ao nascer, que é o nascimento de um bebê pesando menos de 2.500 gramas, medido na primeira hora de vida e independentemente da idade gestacional.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Mortalidade perinatal",
+            "fisiopatologia": "O calor, as inundações e as secas também favorecem a malária, que pode causar infecção placentária e maior risco de mortalidade perinatal, que é a soma dos óbitos fetais (natimortos) e das mortes de recém-nascidos logo após o nascimento.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          }
         ]
       }
     ],
@@ -271,45 +1275,169 @@
   "frio": {
     "nome": "Frio",
     "cor": "#608799",
-    "meses_pico": [5, 6],
+    "meses_pico": [
+      5,
+      6
+    ],
     "alerta_atual": "Frio",
     "alteracoes": [
       {
         "tipo": "Alterações Cardiovasculares",
         "doencas": [
-          "Taquicardia",
-          "Hipertensão",
-          "Angina Pectoris",
-          "Infarto do miocárdio",
-          "Miocardiopatia"
+          {
+            "nome": "Taquicardia",
+            "fisiopatologia": "A exposição ao frio estimula termorreceptores cutâneos que ativam intensamente o sistema nervoso simpático para gerar termogênese sem tremor e preservar a temperatura central, aumentando a liberação de noradrenalina e elevando a frequência cardíaca.",
+            "efeitos_colaterais": [
+              "Palpitações, desconforto torácico, aumento do consumo de oxigênio miocárdico e precipitação de sintomas isquêmicos em coronariopatas."
+            ],
+            "dados_empiricos": [
+              "Estudos fisiológicos e observacionais confirmam elevação aguda da frequência cardíaca e do duplo produto (frequência cardíaca × pressão arterial) logo nos primeiros minutos de exposição a baixas temperaturas."
+            ]
+          },
+          {
+            "nome": "Hipertensão",
+            "fisiopatologia": "O frio provoca vasoconstrição periférica mediada por receptores alfa-adrenérgicos para reduzir a perda de calor pela pele, aumentando a resistência vascular sistêmica e a pressão arterial. O aumento da retenção renal de sódio no inverno reforça a elevação pressórica.",
+            "efeitos_colaterais": [
+              "Picos hipertensivos, cefaleia, epistaxe, maior variabilidade pressórica matinal e risco aumentado de AVC hemorrágico e eventos coronarianos."
+            ],
+            "dados_empiricos": [
+              "Pesquisas epidemiológicas globais mostram que a pressão arterial média é significativamente mais alta no inverno, com quedas de 10 °C na temperatura ambiente associadas a aumentos de 5 a 10 mmHg na pressão sistólica."
+            ]
+          },
+          {
+            "nome": "Angina Pectoris",
+            "fisiopatologia": "A vasoconstrição periférica e a taquicardia induzidas pelo frio elevam a pós-carga e o trabalho cardíaco, aumentando a demanda de oxigênio do miocárdio. Paralelamente, pode ocorrer vasoespasmo coronariano reflexo (especialmente ao inalar ar frio), reduzindo a perfusão miocárdica.",
+            "efeitos_colaterais": [
+              "Dor torácica opressiva ao esforço ou ao sair para ambientes frios, dispneia, sudorese e limitação funcional nas atividades diárias."
+            ],
+            "dados_empiricos": [
+              "Estudos clínicos documentam redução significativa do limiar isquêmico e aumento nas consultas por angina estável e instável durante os meses mais frios do ano."
+            ]
+          },
+          {
+            "nome": "Infarto do miocárdio",
+            "fisiopatologia": "O frio aumenta a viscosidade sanguínea, a concentração de fibrinogênio, o fator VII e a agregação plaquetária (estado pró-trombótico). Associado à hipertensão aguda e ao estresse hemodinâmico sobre placas ateroscleróticas coronarianas, favorece a ruptura de placa e a oclusão trombótica aguda",
+            "efeitos_colaterais": [
+              "Dor precordial intensa e prolongada, irradiação para membro superior esquerdo ou mandíbula, sudorese fria, náuseas, necrose miocárdica e choque cardiogênico."
+            ],
+            "dados_empiricos": [
+              "Grandes registros cardiovasculares e meta-análises comprovam pico sazonal de infarto agudo do miocárdio no inverno, com aumento de 10% a 20% na incidência durante ondas de frio intenso."
+            ]
+          },
+          {
+            "nome": "Miocardiopatia",
+            "fisiopatologia": "O estresse adrenérgico agudo e intenso desencadeado pelo choque térmico do frio extremo pode induzir disfunção ventricular transitória por toxicidade catecolaminérgica e vasoespasmo microvascular (miocardiopatia de Takotsubo). Além disso, infecções respiratórias virais sazonais favorecem quadros de miocardite.",
+            "efeitos_colaterais": [
+              "Dor torácica simulando infarto, dispneia aguda, edema pulmonar, queda da fração de ejeção, arritmias e insuficiência cardíaca aguda."
+            ],
+            "dados_empiricos": [
+              "Séries clínicas e registros multicêntricos apontam maior incidência de miocardiopatia induzida por estresse (Takotsubo) e descompensação de miocardiopatias dilatadas durante quedas bruscas de temperatura."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Respiratórias",
         "doencas": [
-          "Asma",
-          "Hiper-reatividade brônquica",
-          "Infecções respiratórias"
+          {
+            "nome": "Asma",
+            "fisiopatologia": "Inalação de ar frio causa ressecamento da mucosa, broncoconstrição e ↑ da inflamação; no inverno somam-se baixa umidade relativa e mais poluentes. Sintomas (falta de ar, tosse, chiado, escarro, dor torácica) são mais frequentes em asma mal controlada, sobretudo fumantes e com IMC muito baixo ou elevado.",
+            "efeitos_colaterais": [
+              "Sem informação no guia nem nas fontes consultadas."
+            ],
+            "dados_empiricos": [
+              "Sintomas respiratórios mais frequentes no frio, sobretudo em asma mal controlada (Hyrkäs et al., 2016; Hyrkäs-Palmu et al., 2022)."
+            ]
+          },
+          {
+            "nome": "Hiper-reatividade brônquica",
+            "fisiopatologia": "Inalação de ar frio causa ressecamento da mucosa, broncoconstrição e ↑ da inflamação; no inverno somam-se baixa umidade relativa e mais poluentes.",
+            "efeitos_colaterais": [
+              "Sem informação no guia nem nas fontes consultadas."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Infecções respiratórias",
+            "fisiopatologia": "Frio + baixa umidade + poluentes no inverno favorecem infecções respiratórias; maior vulnerabilidade em crianças e idosos (imaturidade/declínio imune e menor termorregulação).",
+            "efeitos_colaterais": [
+              "Sem informação no guia nem nas fontes consultadas."
+            ],
+            "dados_empiricos": [
+              "Brasil: mais internações respiratórias nos meses frios, sobretudo em crianças < 9 e idosos > 80 anos (Fante; Armond, 2016)."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Renais",
         "doencas": [
-          "Insuficiência Renal crônica"
+          {
+            "nome": "Insuficiência Renal crônica",
+            "fisiopatologia": "Se a hipertensão relacionada à exposição ao frio se tornar crônica e não\nfor tratada adequadamente, pode levar à insuficiência renal.",
+            "efeitos_colaterais": [
+              "No manejo da Doença Renal Crônica (DRC) agravada pelo frio, não existe um medicamento específico para tratar o efeito do clima, mas sim uma revisão rigorosa das medicações de uso contínuo e a escolha segura de remédios para infecções sazonais"
+            ],
+            "dados_empiricos": [
+              "Não há informações."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações Neurológicas",
         "doencas": [
-          "AVC",
-          "Meningite meningocócica"
+          {
+            "nome": "AVC",
+            "fisiopatologia": "A vasoconstrição periférica, elevação da pressão arterial e aumento da coagulabilidade sanguínea associadas ao frio provocam aumento da resistência vascular, elevando a pressão arterial e sobrecarregando os vasos sanguíneos. Além disso, o aumento da pressão pode favorecer a ruptura de vasos cerebrais, causando AVC hemorrágico. A vasoconstrição também pode contribuir para a hemoconcentração e a hiperviscosidade sanguínea, favorecendo a formação de trombos e, consequentemente, o AVC isquêmico.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Meningite meningocócica",
+            "fisiopatologia": "Podem favorecer a transmissão da meningite meningocócica, causada pela bactéria Neisseria meningitidis. Durante períodos frios, as pessoas tendem a permanecer em ambientes fechados e pouco ventilados, aumentando a proximidade e o contato com secreções respiratórias de indivíduos infectados. Além disso, o frio e as infecções respiratórias podem comprometer a integridade da mucosa da nasofaringe, facilitando a colonização e a invasão bacteriana. Quando a bactéria atinge a corrente sanguínea e atravessa a barreira hematoencefálica, pode provocar inflamação das meninges, caracterizando a meningite meningocócica.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ]
+          }
         ]
       },
       {
-        "tipo": "Alterações de  Adoecimento Mental",
+        "tipo": "Alterações de Adoecimento Mental",
         "doencas": [
-          "Ansiedade",
-          "Depressão"
+          {
+            "nome": "Transtornos de Ansiedade",
+            "fisiopatologia": "Resposta de estresse contínua desencadeada pelo desconforto térmico, medo do agravamento de doenças crônicas preexistentes e habitações precárias.",
+            "efeitos_colaterais": [
+              "Ansiolíticos e Benzodiazepínicos: Podem inibir percepções autonômicas e reações adaptativas de defesa contra o frio, elevando a susceptibilidade ao congelamento/hipotermia."
+            ],
+            "dados_empiricos": [
+              "Estresses por eventos de frio intenso elevam o risco de quadros de ansiedade e instabilidade emocional em idosos e pessoas com comorbidades (Güngörmüş & Özgüç, 2025)"
+            ]
+          },
+          {
+            "nome": "Transtorno Depressivo Maior",
+            "fisiopatologia": "O estresse térmico por frio intenso, somado ao maior confinamento em ambientes fechados e à redução de atividades externas, desestabiliza circuitos neurobiológicos afetivos.",
+            "efeitos_colaterais": [
+              "Benzodiazepínicos e Sedativos: Aumentam a sedação central e reduzem os reflexos comportamentais e motores de resposta à queda de temperatura, aumentando o risco de hipotermia grave."
+            ],
+            "dados_empiricos": [
+              "Baixas temperaturas e eventos ambientais estacionais associam-se a picos de depressão e sofrimento psicossocial em idosos e grupos vulnerabilizados (Güngörmüş & Özgüç, 2025; Jia et al., 2010)."
+            ]
+          },
+          {
+            "nome": "Esquizofrenia (Surto Agudo)",
+            "fisiopatologia": "O estresse térmico pelo frio severo somado ao confinamento e ao aumento estacional da poluição do ar desestabiliza neurocircuitos.",
+            "efeitos_colaterais": [
+              "Benzodiazepínicos e Sedativos: Promovem sedação excessiva e reduzem o nível de alerta, diminuindo os reflexos comportamentais e as respostas físicas adaptativas de proteção contra a hipotermia."
+            ],
+            "dados_empiricos": [
+              "Pesquisas demonstram aumento do risco de crises e hospitalizações por esquizofrenia em temperaturas muito baixas (He et al., 2022; Zhang et al., 2020a; Wei et al., 2020)."
+            ]
+          }
         ]
       }
     ],
@@ -321,34 +1449,101 @@
       "Fique ativo quando estiver ao ar livre, mas evite exercícios físicos vigorosos"
     ]
   },
-  "fenomemos extremos": {
+  "fenomenos_extremos": {
     "nome": "Fenômenos Extremos",
     "cor": "#B793BA",
-    "meses_pico": [1, 2, 10, 11, 12],
+    "meses_pico": [
+      1,
+      2,
+      10,
+      11,
+      12
+    ],
     "alerta_atual": "Fenômenos Extremos",
     "alteracoes": [
       {
         "tipo": "Alterações cardiovasculares",
         "doencas": [
-          "Taquicardia",
-          "Hipertensão",
-          "Insuficiência Cardíaca"
-        ]
-      },
-      {
-        "tipo": "Alterações de Adoecimento mental",
-        "doencas": [
-          "Ansiedade",
-          "Depressão",
-          "Estresse pós-traumático",
-          "Problemas psicossociais"
+          {
+            "nome": "Taquicardia",
+            "fisiopatologia": "Eventos climáticos extremos (furacões, tempestades severas, deslizamentos) geram resposta neuroendócrina aguda de luta ou fuga, com descarga massiva de catecolaminas e cortisol, elevando abruptamente o tônus simpático e a frequência cardíaca.",
+            "efeitos_colaterais": [
+              "Palpitações intensas, sensação de opressão torácica, ansiedade aguda, tontura e risco de desencadeamento de arritmias em cardiopatas."
+            ],
+            "dados_empiricos": [
+              "Estudos de monitoramento cardiovascular durante desastres climáticos agudos demonstram elevação imediata da frequência cardíaca e aumento nos atendimentos por taquiarritmias nas primeiras 48 horas do evento."
+            ]
+          },
+          {
+            "nome": "Hipertensão",
+            "fisiopatologia": "O trauma emocional agudo, a destruição de moradias, o deslocamento forçado e a interrupção do tratamento medicamentoso contínuo ativam o eixo simpático-adrenal e o sistema renina-angiotensina-aldosterona, promovendo vasoconstrição sustentada e elevação pressórica.",
+            "efeitos_colaterais": [
+              "Emergências hipertensivas, cefaleia intensa, tontura, descontrole pressórico prolongado e maior incidência de eventos cardiovasculares maiores nos meses seguintes."
+            ],
+            "dados_empiricos": [
+              "Pesquisas realizadas após furacões e tempestades catastróficas mostram aumento expressivo nas crises hipertensivas e na prescrição de anti-hipertensivos nas comunidades atingidas, persistindo por semanas após o desastre."
+            ]
+          },
+          {
+            "nome": "Insuficiência Cardíaca",
+            "fisiopatologia": "A interrupção do acesso a fármacos essenciais e serviços de saúde, associada ao estresse adrenérgico extremo, privação de sono, dieta inadequada em abrigos e esforço físico durante evacuações, desencadeia retenção hidrossalina e sobrecarga hemodinâmica aguda.",
+            "efeitos_colaterais": [
+              "Dispneia grave, ortopneia, edema generalizado, congestão pulmonar aguda, fadiga incapacitante e aumento da mortalidade hospitalar."
+            ],
+            "dados_empiricos": [
+              "Análises epidemiológicas pós-desastres naturais comprovam elevação significativa nas hospitalizações e nos óbitos por insuficiência cardíaca descompensada nas primeiras semanas após eventos climáticos extremos."
+            ]
+          }
         ]
       },
       {
         "tipo": "Alterações de Saúde Materno-Infantil",
         "doencas": [
-          "Parto prematuro",
-          "Baixo peso ao nascer"
+          {
+            "nome": "Parto prematuro",
+            "fisiopatologia": "Mecanismo desconhecido. O estresse não parece estar envolvido. Parto prematuro é quando o bebê nasce antes de 37 semanas completas de gestação.",
+            "efeitos_colaterais": [
+              "Podem ser usados medicamentos para o manejo do trabalho de parto prematuro, como tocolíticos, progesterona, corticosteroides antenatais e sulfato de magnésio."
+            ],
+            "dados_empiricos": [
+              "-Foi constatado que 14% das mulheres que estavam grávidas antes do furacão Katrina ou nos seis meses seguintes e foram muito expostas ao desastre tiveram partos prematuros, em comparação com apenas 6% das mulheres menos expostas."
+            ]
+          },
+          {
+            "nome": "Baixo peso ao nascer",
+            "fisiopatologia": "Mecanismo desconhecido. Baixo peso ao nascer é o nascimento de um bebê pesando menos de 2.500 gramas, medido na primeira hora de vida e independentemente da idade gestacional.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "-O baixo peso ao nascer foi mais frequente (14%) em recém-nascidos de mulheres altamente expostas ao furacão do que naquelas menos expostas (4,7%)."
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "Alterações de Adoecimento Mental",
+        "doencas": [
+          {
+            "nome": "Ecoansiedade (Ansiedade Climática)",
+            "fisiopatologia": "Resposta emocional legítima de preocupação, tristeza e angústia diante das incertezas sobre o futuro do planeta.",
+            "efeitos_colaterais": [
+              "Medicalização Inadequada: Risco de prescrição indevida de psicofármacos para reações emocionais normais, gerando embotamento afetivo, dependência e ocultamento do engajamento social."
+            ],
+            "dados_empiricos": [
+              "Reconhecida formalmente pela Organização Mundial da Saúde (OMS, 2022) e APA (2023) como forma legítima de sofrimento psicossocial."
+            ]
+          },
+          {
+            "nome": "Luto Ecológico",
+            "fisiopatologia": "Processo de luto provocado pela degradação irreversível do território de pertencimento, da biodiversidade e dos modos de vida.",
+            "efeitos_colaterais": [
+              "Medicalização Inadequada: O uso desnecessário de ansiolíticos/antidepressivos pode encobrir a dimensão afetiva e motivacional que mobiliza os sujeitos para a ação"
+            ],
+            "dados_empiricos": [
+              "mpacto severo documentado em populações indígenas e tradicionais brasileiras diante da perda do território e do \"Bem-Viver\" (Lacerda et al., 2024; Grande et al., 2024)."
+            ]
+          }
         ]
       }
     ],
@@ -357,26 +1552,126 @@
   "tempestades": {
     "nome": "Tempestades",
     "cor": "#6E6EB5",
-    "meses_pico": [12, 1, 2],
+    "meses_pico": [
+      12,
+      1,
+      2
+    ],
     "alerta_atual": "Tempestades",
     "alteracoes": [
       {
         "tipo": "Alterações Respiratórias",
         "doencas": [
-          "Asma",
-          "Alergias",
-          "Hiper-reatividade brônquica"
+          {
+            "nome": "Asma",
+            "fisiopatologia": "O guia agrupa 'enchentes, inundações e tempestades chuvosas': mofo em ambientes úmidos e exposição a partículas finas (PM2,5) agravam doenças respiratórias.",
+            "efeitos_colaterais": [
+              "Guia: eventos extremos podem comprometer o abastecimento e o armazenamento de medicamentos de uso contínuo. Externo (rótulo FDA): calor e umidade degradam o inalador; spray acima de 49 °C pode romper."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Alergias",
+            "fisiopatologia": "Umidade e mofo (esporos) como alérgenos desencadeantes de asma e rinite alérgica (agrupado com enchentes/inundações no guia).",
+            "efeitos_colaterais": [
+              "Externo: anti-histamínicos de 1ª geração → sonolência, boca seca, ↓ sudorese; os de 2ª geração são menos sedativos."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          },
+          {
+            "nome": "Hiper-reatividade brônquica",
+            "fisiopatologia": "Exposição a mofo, umidade e partículas finas → inflamação e hiper-reatividade das vias aéreas (agrupado com enchentes/inundações).",
+            "efeitos_colaterais": [
+              "Guia: eventos extremos podem comprometer o abastecimento e o armazenamento de medicamentos de uso contínuo. Externo (rótulo FDA): calor e umidade degradam o inalador; spray acima de 49 °C pode romper."
+            ],
+            "dados_empiricos": [
+              "Não há evidências concretas."
+            ]
+          }
         ]
       },
       {
         "tipo": "Zoonoses e doenças de transmissão vetorial",
         "doencas": [
-          "Dengue",
-          "Chikungunya",
-          "Zika",
-          "Malária",
-          "Leptospirose",
-          "Hantavirose"
+          {
+            "nome": "Dengue",
+            "fisiopatologia": "O vírus da dengue é transmitido pelo Aedes aegypti. Tempestades severas provocam acúmulo repentino de água em áreas urbanas, além de destruição de infraestruturas de saneamento, criando inúmeros criadouros e elevando a densidade vetorial.",
+            "efeitos_colaterais": [
+              "O tratamento baseia-se em hidratação rigorosa e analgésicos/antitérmicos (paracetamol ou dipirona). O uso incorreto de anti-inflamatórios não esteroides (AINEs), facilitado pelo isolamento e corte de serviços de saúde durante tempestades, agrava o risco de hemorragias devido à trombocitopenia induzida. Ademais, falhas no abastecimento de água potável pós-tempestade agravam o risco de desidratação e toxicidade."
+            ],
+            "dados_empiricos": [
+              "A Organização Mundial da Saúde (OMS) aponta dezenas de milhões de casos anuais no mundo. Tempestades e eventos climáticos extremos correlacionam-se diretamente com surtos explosivos da doença devido ao colapso do saneamento e à proliferação acelerada do vetor."
+            ]
+          },
+          {
+            "nome": "Chikungunya",
+            "fisiopatologia": "Causada pelo vírus Chikungunya e transmitida por Aedes aegypti e Aedes albopictus. Tempestades intensas aumentam os criadouros artificiais e a umidade, favorecendo a proliferação dos vetores.",
+            "efeitos_colaterais": [
+              "O manejo utiliza paracetamol e analgésicos, além de opioides ou AINEs sob prescrição. Em cenários de tempestades que isolam comunidades e impedem o atendimento médico, o uso empírico e descontrolado de AINEs pode causar gastrite erosiva, úlceras e disfunção renal, cujos riscos são potencializados pela escassez de suporte e condições insalubres."
+            ],
+            "dados_empiricos": [
+              "O Brasil registra centenas de milhares de casos prováveis anualmente, com surtos agravados por períodos chuvosos extremos e tempestades que resultam em afastamento laboral prolongado devido à persistência das dores articulares."
+            ]
+          },
+          {
+            "nome": "Zika",
+            "fisiopatologia": "O Zika vírus é transmitido pelo Aedes aegypti. Tempestades severas geram acúmulo de água e destroem barreiras sanitárias, aumentando a proliferação do vetor.",
+            "efeitos_colaterais": [
+              "O tratamento foca no alívio de sintomas com paracetamol e hidratação. A interrupção de serviços médicos essenciais causada por tempestades dificulta o monitoramento de gestantes e o manejo de reações adversas, enquanto a automedicação inadequada com AINEs eleva o risco de complicações hemorrágicas."
+            ],
+            "dados_empiricos": [
+              "O impacto epidemiológico abrange milhares de casos confirmados de malformações congênitas associados a surtos epidêmicos potencializados por condições climáticas favoráveis à expansão vetorial rápida."
+            ]
+          },
+          {
+            "nome": "Malária",
+            "fisiopatologia": "Causada por protozoários do gênero Plasmodium (como P. vivax e P. falciparum), transmitidos por fêmeas de mosquitos Anopheles. Tempestades intensas alteram o curso dos rios e criam coleções d'água marginais rasas, ideais para a reprodução do vetor.",
+            "efeitos_colaterais": [
+              "O tratamento exige antimaláricos específicos (como arteméter e lumefantrina ou cloroquina e primaquina). Em regiões afetadas por tempestades, onde há destruição de postos de saúde e escassez de suprimentos, os efeitos gastrintestinais e a hepatotoxicidade dos fármacos tornam-se mais difíceis de manejar, elevando o risco de falha terapêutica."
+            ],
+            "dados_empiricos": [
+              "A OMS registra cerca de 250 milhões de casos anuais e centenas de milhares de mortes globalmente. Tempestades e chuvas torrenciais em áreas endêmicas destroem infraestruturas de saúde, interrompem o fluxo de medicamentos e atrasam o diagnóstico laboratorial precoce."
+            ]
+          },
+          {
+            "nome": "Leptospirose",
+            "fisiopatologia": "Causada pela bactéria espiroqueta Leptospira, eliminada na urina de roedores e outros animais, que se dissemina em ambientes alagados. As tempestades provocam enchentes e transbordamentos que misturam esgoto e águas contaminadas ao ambiente urbano. A infecção ocorre quando o indivíduo entra em contato com essa água através de abrasões na pele ou mucosas.",
+            "efeitos_colaterais": [
+              "O tratamento de suporte e a antibioticoterapia precoce (com doxiciclina ou penicilina cristalina) são fundamentais. Alguns antibióticos e analgésicos utilizados no manejo clínico apresentam toxicidade renal e hepática. Em cenários de tempestades, a desidratação, os distúrbios hidroeletrolíticos e a insuficiência renal já induzidas pela própria leptospirose agravam drasticamente a nefrotoxicidade e a hepatotoxicidade de fármacos, elevando o risco de falência orgânica caso o suporte laboratorial e a hidratação intravenosa sejam interrompidos."
+            ],
+            "dados_empiricos": [
+              "Os relatórios e boletins epidemiológicos do Ministério da Saúde do Brasil registram, em média, entre 3.000 e 4.000 casos confirmados de leptospirose por ano no país. Tempestades severas e enchentes urbanas deflagram surtos epidêmicos agudos devido à exposição da população às águas contaminadas."
+            ]
+          },
+          {
+            "nome": "Hantavirose",
+            "fisiopatologia": "Causada por hantavírus, transmitidos principalmente pela inalação de aerossóis formados a partir de secreções (saliva, urina e fezes) de roedores silvestres infectados. As tempestades e eventos climáticos extremos alteram a disponibilidade de alimentos na natureza e forçam os roedores a migrar para habitações humanas em busca de abrigo e alimento.",
+            "efeitos_colaterais": [
+              "O tratamento é essencialmente de suporte intensivo (oxigenoterapia e suporte hemodinâmico). Medicamentos vasoativos e sedativos utilizados em unidades de terapia intensiva apresentam efeitos colaterais cardiovasculares significativos (como hipotensão severa e arritmias). Em contextos de tempestades severas que isolam regiões, danificam hospitais e interrompem o suporte de oxigênio e eletricidade, o manejo desses fármacos torna-se extremamente restrito."
+            ],
+            "dados_empiricos": [
+              "A hantavirose apresenta alta letalidade (superior a 35%). Desastres ambientais e tempestades que alteram o ecossistema e aumentam a proximidade entre humanos e roedores silvestres correlacionam-se com o surgimento de casos isolados ou surtos em áreas rurais e urbanas."
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "Alterações de Adoecimento Mental",
+        "doencas": [
+          {
+            "nome": "Reação Aguda ao Estresse (Pânico Agudo)",
+            "fisiopatologia": "Hiperativação simpática imediata em resposta ao perigo físico iminente, barulho de vendavais e destruição de infraestruturas.",
+            "efeitos_colaterais": [
+              "Não há evidências concretas."
+            ],
+            "dados_empiricos": [
+              "Tempestades e eventos atmosféricos violentos provocam aumentos imediatos em reações de pânico agudo e estresse (APA, 2024; Cianconi, Betrò & Janiri, 2020)."
+            ]
+          }
         ]
       }
     ],
